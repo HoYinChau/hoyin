@@ -249,3 +249,13 @@ left:0;
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+    
+    /***************hoyin*******************/
+max{
+position:fixed !important;
+position:absolute;
+top:0;
+right:0;
+bottom:0;
+left:0; 
+}
