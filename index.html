@@ -1,409 +1,382 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=768, initial-scale=1, shrink-to-fit=no">
 
-<!DOCTYPE html><html lang='en' class=''>
-<head>
-  <title>Milestone</title>
-<meta charset='UTF-8'>
-<meta name="robots" content="noindex">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-<script type="text/javascript">
-      new WOW().init();
-</script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">    
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/rebt.css">
 
-<style class="cp-pen-styles">
-@import "https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
-
-header:after, #timeline .timeline-item:after, header:before, #timeline .timeline-item:before {
-  content: '';
-  display: block;
-  width: 100%;
-  clear: both;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-
-body, html {
-  height: 100%;
-}
-
-body {
-  background: #f9f9f9;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-  font-family: helvetica, arial, tahoma, verdana;
-  line-height: 20px;
-  font-size: 14px;
-  color: #726f77;
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-h1, h2, h3, h4 {
-  font-family: "Dosis", arial, tahoma, verdana;
-  font-weight: 500;
-}
-
-.project-name {
-  text-align: center;
-  padding: 10px 0;
-}
-
-header {
-  background: #f9f9f9;
-  padding: 10px;
-  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
-  -ms-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
-}
-header .logo {
-  color: #ee4d4d;
-  float: left;
-  font-family: "Dosis", arial, tahoma, verdana;
-  font-size: 22px;
-  font-weight: 500;
-}
-header .logo > span {
-  color: #f7aaaa;
-  font-weight: 300;
-}
-header .social {
-  float: right;
-}
-header .social .btn {
-  font-family: "Dosis";
-  font-size: 14px;
-  margin: 10px 5px;
-}
-
-#timeline {
-  width: 100%;
-  margin: 30px auto;
-  position: relative;
-  padding: 0 10px;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-#timeline:before {
-  content: "";
-  width: 3px;
-  height: 100%;
-  background: #ee4d4d;
-  left: 50%;
-  top: 0;
-  position: absolute;
-}
-#timeline:after {
-  content: "";
-  clear: both;
-  display: table;
-  width: 100%;
-}
-#timeline .timeline-item {
-  margin-bottom: 50px;
-  position: relative;
-}
-#timeline .timeline-item .timeline-icon {
-  background: #ee4d4d;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  overflow: hidden;
-  margin-left: -23px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-}
-#timeline .timeline-item .timeline-icon svg {
-  position: relative;
-  top: 14px;
-  left: 14px;
-}
-#timeline .timeline-item .timeline-content {
-  width: 45%;
-  background: #fff;
-  padding: 20px;
-  -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-#timeline .timeline-item .timeline-content h2 {
-  padding: 15px;
-  background: #ee4d4d;
-  color: #fff;
-  margin: -20px -20px 0 -20px;
-  font-weight: 300;
-  -webkit-border-radius: 3px 3px 0 0;
-  -moz-border-radius: 3px 3px 0 0;
-  -ms-border-radius: 3px 3px 0 0;
-  border-radius: 3px 3px 0 0;
-}
-#timeline .timeline-item .timeline-content:before {
-  content: '';
-  position: absolute;
-  left: 45%;
-  top: 20px;
-  width: 0;
-  height: 0;
-  border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent;
-  border-left: 7px solid #ee4d4d;
-}
-#timeline .timeline-item .timeline-content.right {
-  float: right;
-}
-#timeline .timeline-item .timeline-content.right:before {
-  content: '';
-  right: 45%;
-  left: inherit;
-  border-left: 0;
-  border-right: 7px solid #ee4d4d;
-}
-
-.btn {
-    padding: 5px 15px;
-    text-decoration: none;
-    background: transparent;
-    border: 2px solid #000000;
-    color: #000000;
-    display: inline-block;
-    position: relative;
-    text-transform: uppercase;
-    font-size: 12px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-transition: background 0.3s ease;
-    -moz-transition: background 0.3s ease;
-    -ms-transition: background 0.3s ease;
-    transition: background 0.3s ease;
-    -webkit-box-shadow: 2px 2px 0 #f27c7c;
-    -moz-box-shadow: 2px 2px 0 #f27c7c;
-    -ms-box-shadow: 2px 2px 0 #f27c7c;
-    box-shadow: 2px 2px 0 #000000;
-}
-.btn:hover {
-  box-shadow: none;
-  top: 2px;
-  left: 2px;
-  -webkit-box-shadow: 2px 2px 0 transparent;
-  -moz-box-shadow: 2px 2px 0 transparent;
-  -ms-box-shadow: 2px 2px 0 transparent;
-  box-shadow: 2px 2px 0 transparent;
-}
-
-@media screen and (max-width: 768px) {
-  #timeline {
-    margin: 30px;
-    padding: 0px;
-    width: 90%;
-  }
-  #timeline:before {
-    left: 0;
-  }
-  #timeline .timeline-item .timeline-content {
-    width: 90%;
-    float: right;
-  }
-  #timeline .timeline-item .timeline-content:before, #timeline .timeline-item .timeline-content.right:before {
-    left: 10%;
-    margin-left: -6px;
-    border-left: 0;
-    border-right: 7px solid #ee4d4d;
-  }
-  #timeline .timeline-item .timeline-icon {
-    left: 0;
-  }
-}
-</style></head><body>
-<header>
-		<div class="container">
-			<h1 class="logo">
-				<span></span>
-			</h1>
-			<section class="social">
-				<a class="btn" href="">Job</a>
-				<a class="btn" href="">Personal</a>
-			</section>
-		</div>
-	</header>
-
-	<div class="container">
-    <h1 class="project-name">RESPONSIVE TIMELINE</h1>
-		<div id="timeline">
-			<div class="timeline-item">
-				<div class="timeline-icon">
-					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
-<path fill="#FFFFFF" d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
-	c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
-	l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
-	c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
-	c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z"/>
-</svg>
-
-				</div>
-				<div class="timeline-content animated fadeIn wow">
-					<h2>LOREM IPSUM DOLOR</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-						Atque, facilis quo maiores magnam modi ab libero praesentium blanditiis.
-					</p>
-					
-				</div>
-			</div>
-
-			<div class="timeline-item">
-				<div class="timeline-icon">
-					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
-<g>
-	<path fill="#FFFFFF" d="M17.92,3.065l-1.669-2.302c-0.336-0.464-0.87-0.75-1.479-0.755C14.732,0.008,7.653,0,7.653,0v5.6
-		c0,0.096-0.047,0.185-0.127,0.237c-0.081,0.052-0.181,0.06-0.268,0.02l-1.413-0.64C5.773,5.183,5.69,5.183,5.617,5.215l-1.489,0.65
-		c-0.087,0.038-0.19,0.029-0.271-0.023c-0.079-0.052-0.13-0.141-0.13-0.235V0H2.191C1.655,0,1.233,0.434,1.233,0.97
-		c0,0,0.025,15.952,0.031,15.993c0.084,0.509,0.379,0.962,0.811,1.242l2.334,1.528C4.671,19.905,4.974,20,5.286,20h10.307
-		c1.452,0,2.634-1.189,2.634-2.64V4.007C18.227,3.666,18.12,3.339,17.92,3.065z M16.42,17.36c0,0.464-0.361,0.833-0.827,0.833H5.341
-		l-1.675-1.089h10.341c0.537,0,0.953-0.44,0.953-0.979V2.039l1.459,2.027V17.36L16.42,17.36z"/>
-</g>
-</svg>
-
-				</div>
-				<div class="timeline-content right animated fadeIn wow">
-					<h2>LOREM IPSUM DOLOR</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
-					</p>
-					
-				</div>
-			</div>
-
-			<div class="timeline-item">
-				<div class="timeline-icon">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
-<path fill="#FFFFFF" d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
-	c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
-	l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
-	c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
-	c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z"/>
-</svg>
-
-				</div>
-				<div class="timeline-content animated fadeIn wow">
-					<h2>LOREM IPSUM DOLOR</h2>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
-					</p>
-					
-				</div>
-			</div>
-		</div>
-	</div>
+  </head>
+  <body>
 
 
-
-
-    <div class="container">
-    <h1 class="project-name">RESPONSIVE TIMELINE</h1>
-    <div id="timeline">
-      <div class="timeline-item">
-        <div class="timeline-icon">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
-<path fill="#FFFFFF" d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
-  c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
-  l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
-  c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
-  c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z"/>
-</svg>
-
-        </div>
-				<div class="timeline-content animated fadeIn wow">
-          <h2>LOREM IPSUM DOLOR</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Atque, facilis quo maiores magnam modi ab libero praesentium blanditiis.
-          </p>
-          
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-icon">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
-<g>
-  <path fill="#FFFFFF" d="M17.92,3.065l-1.669-2.302c-0.336-0.464-0.87-0.75-1.479-0.755C14.732,0.008,7.653,0,7.653,0v5.6
-    c0,0.096-0.047,0.185-0.127,0.237c-0.081,0.052-0.181,0.06-0.268,0.02l-1.413-0.64C5.773,5.183,5.69,5.183,5.617,5.215l-1.489,0.65
-    c-0.087,0.038-0.19,0.029-0.271-0.023c-0.079-0.052-0.13-0.141-0.13-0.235V0H2.191C1.655,0,1.233,0.434,1.233,0.97
-    c0,0,0.025,15.952,0.031,15.993c0.084,0.509,0.379,0.962,0.811,1.242l2.334,1.528C4.671,19.905,4.974,20,5.286,20h10.307
-    c1.452,0,2.634-1.189,2.634-2.64V4.007C18.227,3.666,18.12,3.339,17.92,3.065z M16.42,17.36c0,0.464-0.361,0.833-0.827,0.833H5.341
-    l-1.675-1.089h10.341c0.537,0,0.953-0.44,0.953-0.979V2.039l1.459,2.027V17.36L16.42,17.36z"/>
-</g>
-</svg>
-
-        </div>
-        <div class="timeline-content right animated fadeIn wow">
-          <h2>LOREM IPSUM DOLOR</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
-          </p>
-          
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-icon">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
-<path fill="#FFFFFF" d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
-  c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
-  l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
-  c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
-  c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z"/>
-</svg>
-
-        </div>
-				<div class="timeline-content animated fadeIn wow">
-          <h2>LOREM IPSUM DOLOR</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
-          </p>
-          
-        </div>
-      </div>
-    </div>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">HoYin</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse text-right" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#Jobs">Jobs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Part-Time">Part-Time</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Freelance">Freelance</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Personal">Personal</a>
+      </li>
+    </ul>
   </div>
-</body></html>
+</nav>
+
+      <!-- MEDILASE -->
+      <div class="container" id="Jobs">
+         <h1 class="project-name"><a href="http://www.medilase.com.hk">MEDILASE</a><br><br> 2017 - 03 ~ Now</h1>
+         <div id="timeline">
+            <div class="timeline-item">
+               <div class="timeline-icon">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                     <g>
+                        <path fill="#FFFFFF" d="M17.92,3.065l-1.669-2.302c-0.336-0.464-0.87-0.75-1.479-0.755C14.732,0.008,7.653,0,7.653,0v5.6
+                           c0,0.096-0.047,0.185-0.127,0.237c-0.081,0.052-0.181,0.06-0.268,0.02l-1.413-0.64C5.773,5.183,5.69,5.183,5.617,5.215l-1.489,0.65
+                           c-0.087,0.038-0.19,0.029-0.271-0.023c-0.079-0.052-0.13-0.141-0.13-0.235V0H2.191C1.655,0,1.233,0.434,1.233,0.97
+                           c0,0,0.025,15.952,0.031,15.993c0.084,0.509,0.379,0.962,0.811,1.242l2.334,1.528C4.671,19.905,4.974,20,5.286,20h10.307
+                           c1.452,0,2.634-1.189,2.634-2.64V4.007C18.227,3.666,18.12,3.339,17.92,3.065z M16.42,17.36c0,0.464-0.361,0.833-0.827,0.833H5.341
+                           l-1.675-1.089h10.341c0.537,0,0.953-0.44,0.953-0.979V2.039l1.459,2.027V17.36L16.42,17.36z"/>
+                     </g>
+                  </svg>
+               </div>
+               <div class="timeline-content right animated fadeIn wow">
+                  <h2>New Try For me</h2>
+                  <br>
+                  <p>
+                     - Google HTML ADs developing (<a href="https://www.google.com/webdesigner/">Google Web Designer</a>)<br>
+                     - SEO <br>
+                     - Writing content<br>
+                     - Online Marketing <br>
+                     - <a href="https://www.hubspot.com/">HubSpot</a> 
+                  </p>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-icon">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                     <path fill="#FFFFFF" d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
+                        c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
+                        l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
+                        c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
+                        c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z"/>
+                  </svg>
+               </div>
+               <div class="timeline-content animated fadeIn wow">
+                  <h2>Daily duty</h2>
+                  <br>
+                  <p>
+                     - Website content updated<br>
+                     - Revamp the website <br>
+                     - Landing page development<br>
+
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- / MEDILASE -->
+
+
+      <!-- Pricerite -->
+      <div class="container" id="Pricerite">
+         <h1 class="project-name"><a href="https://hongkong.pricerite.com.hk/">Pricerite LTD</a><br><br> 2016 - 08 ~ 2016- 11</h1>
+         <h5>
+            <center>Project Base : <a href="https://www.tmf.hk/">TMF.hk</a></center>
+         </h5>
+         <div id="timeline">
+            <div class="timeline-item">
+               <div class="timeline-icon">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                     <path fill="#FFFFFF" d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
+                        c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
+                        l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
+                        c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
+                        c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z"/>
+                  </svg>
+               </div>
+               <div class="timeline-content right animated fadeIn wow">
+                  <h2>Finalize</h2>
+                  <br>
+                  <p>
+                     - UI / UX improvement<br>
+                     - Prepare for handover doc
+                  </p>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-icon">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                     <path fill="#FFFFFF" d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
+                        c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
+                        l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
+                        c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
+                        c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z"/>
+                  </svg>
+               </div>
+               <div class="timeline-content animated fadeIn wow">
+                  <h2>Developing</h2>
+                  <br>
+                  <p>
+                     - Customize Wordpress theme<br>
+                     - Combine with E-shop
+                  </p>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-icon">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                     <g>
+                        <path fill="#FFFFFF" d="M17.92,3.065l-1.669-2.302c-0.336-0.464-0.87-0.75-1.479-0.755C14.732,0.008,7.653,0,7.653,0v5.6
+                           c0,0.096-0.047,0.185-0.127,0.237c-0.081,0.052-0.181,0.06-0.268,0.02l-1.413-0.64C5.773,5.183,5.69,5.183,5.617,5.215l-1.489,0.65
+                           c-0.087,0.038-0.19,0.029-0.271-0.023c-0.079-0.052-0.13-0.141-0.13-0.235V0H2.191C1.655,0,1.233,0.434,1.233,0.97
+                           c0,0,0.025,15.952,0.031,15.993c0.084,0.509,0.379,0.962,0.811,1.242l2.334,1.528C4.671,19.905,4.974,20,5.286,20h10.307
+                           c1.452,0,2.634-1.189,2.634-2.64V4.007C18.227,3.666,18.12,3.339,17.92,3.065z M16.42,17.36c0,0.464-0.361,0.833-0.827,0.833H5.341
+                           l-1.675-1.089h10.341c0.537,0,0.953-0.44,0.953-0.979V2.039l1.459,2.027V17.36L16.42,17.36z"/>
+                     </g>
+                  </svg>
+               </div>
+               <div class="timeline-content right animated fadeIn wow">
+                  <h2>Prepare marketing material</h2>
+                  <br>
+                  <p>
+                     - Stock photos<br>
+                     - Content
+                  </p>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-icon">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                     <path fill="#FFFFFF" d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
+                        c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
+                        l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
+                        c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
+                        c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z"/>
+                  </svg>
+               </div>
+               <div class="timeline-content animated fadeIn wow">
+                  <h2>Prepare to Build the website For TMF</h2>
+                  <br>
+                  <p>
+                     - Choose platform<br>
+                     - Choose theme
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- / Pricerite -->
+
+      <!-- PT -->
+      <div class="container" id="Part-Time">
+         <h1 class="project-name">Short Term / Part-Time jobs  when studing</h1>
+         <div id="timeline">
+            <div class="timeline-item">
+               <div class="timeline-icon">
+                  <i class="far fa-file fa-2x"></i>
+               </div>
+               <div class="timeline-content animated fadeIn wow">
+                  <h2>LoveTravel Media Limited</h2>
+                  <br>
+                  <p>
+                     2016 - 04 ~ 2016 - 05<br><br>
+                     - Revamp <a href="http://www.lovetravel.com/mytrip2/index.php">lovetravel.com</a><br>
+                     - Assist in Marketing team on doc report.
+                  </p>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-icon">
+                  <i class="far fa-file fa-2x"></i>
+               </div>
+               <div class="timeline-content right animated fadeIn wow">
+                  <h2>Jemex Idea LTD</h2>
+                  <br>
+                  <p>
+                     2014 - 12 ~ 2015 - 02<br><br>
+                     <a href="hofex2015.expotec-reg.com">hofex2015.expotec-reg.com</a><br>
+                     - Develop a online platform for visiter/reporter registration <br>
+                     - Both Front-End (HTML5 CSS) and Back-End (PHP MVC)<br>
+                     - Database design for data management after registration : <br>
+                  <ul>
+                     <li>Show / Edit / Update</li>
+                     <li>Approve / Disapprove</li>
+                     <li>Assign approving job to staff (User Level)</li>
+                     <li>Simple analysisli>
+                     <li>UI & UX design......</</li>
+                  </ul>
+                  - Maintain <a href="http://www.thehub.hk/">thehub.hk</a>
+                  </p>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-icon">
+                  <i class="far fa-file fa-2x"></i>
+               </div>
+               <div class="timeline-content animated fadeIn wow">
+                  <h2>Design My Home LTD</h2>
+                  <br>
+                  <p>
+                     - Develop website
+                  <ul>
+                     <li><a href="http://essensual.com.hk/">essensual.com.hk</a></li>
+                     <li><a href="http://jcdesignhk.com/">jcdesignhk.com</a></li>
+                     <li><a href="http://www.gpenterpriseasia.com/">gpenterpriseasia.com</a></li>
+                  </ul>
+                  - Maintain website
+                  <ul>
+                     <li><a href="http://designmyhome.com.hk/">designmyhome.com.hk</a></li>
+                     <li><a href="http://www.newtimes-interiordeesgn.com">newtimes-interiordeesgn.com</a></li>
+                  </ul>
+                  - All maked by HTML & CSS only
+                  </p>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-icon">
+                  <i class="far fa-file fa-2x"></i>
+               </div>
+               <div class="timeline-content right animated fadeIn wow">
+                  <h2>Classrome LTD</h2>
+                  <br>
+                  <p>
+                     2013 - 08 ~ 2013 - 09<br><br>
+                     - Website content updated<br>
+                     - Fix cross browser bug in CSS
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- PT -->
+
+      <!-- Freelance -->
+      <div class="container"   id="Freelance">
+         <h1 class="project-name">FREELANCE</h1>
+         <div id="timeline">
+            <div class="timeline-item">
+               <div class="timeline-icon">
+                  <i class="far fa-file fa-2x"></i>
+               </div>
+               <div class="timeline-content animated fadeIn wow">
+                  <h2>RMCSA</h2>
+                  <br>
+                  <a href="http://www.rmcsa.com.hk/">rmcsa.com.hk</a>
+                  <br><br>
+                  <p>
+                     - Build by CMS <br>
+                     - Customize the theme by requriment <br>
+                     - SEO <br>
+                     - Google Analytics <br>
+                     - Keep support and maintain <br>
+                  </p>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-icon">
+                  <i class="far fa-file fa-2x"></i>
+               </div>
+               <div class="timeline-content right animated fadeIn wow">
+                  <h2>HKGCPL</h2>
+                  <br>
+                  <a href="http://hkgcpl.com.hk/index.php/zh/">hkgcpl.com.hk</a>
+                  <br><br>
+                  <p>
+                     - Build by CMS  <br>
+                     - Costumice the theme by requriment <br>
+                     - SEO <br>
+                     - Google Analytics <br>
+                     - Keep support and maintain <br>
+                  </p>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-icon">
+                  <i class="far fa-file fa-2x"></i>
+               </div>
+               <div class="timeline-content animated fadeIn wow">
+                  <h2>FHKPMI</h2>
+                  <br>
+                  <a href="http://fhkpmi.hk/index.php/zh/">fhkpmi.hk</a>
+                  <br><br>
+                  <p>
+                     - Build by CMS  <br>
+                     - Costumice the theme by requriment <br>
+                     - SEO <br>
+                     - Google Analytics <br>
+                     - Keep support and maintain <br>
+                  </p>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-icon">
+                  <i class="far fa-file fa-2x"></i>
+               </div>
+               <div class="timeline-content right animated fadeIn wow">
+                  <h2>SpeakDesign</h2>
+                  <br>
+                  <a href="http://www.speaktraining.com/">speaktraining.com</a>
+                  <br><br>
+                  <p>
+                     - Build by CMS  <br>
+                     - Revamp the theme by requriment <br>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- / Freelance -->
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" ></script>
+              <script>
+              new WOW().init();
+
+$(document).ready(function () {
+$('a[href*=#]').click(function(event){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    event.preventDefault();
+});
+});
+
+
+              
+
+              </script>
+
+  </body>
+</html>
