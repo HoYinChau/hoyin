@@ -326,13 +326,11 @@ $('a[href*=#]').click(function(event){
     }, 500);
     event.preventDefault();
 });
-	     $(document).click(function (event) {
-         var clickover = $(event.target);
-         var _opened = $(".navbar-collapse").hasClass("show");
-         if (_opened === true && !clickover.hasClass("navbar-toggler")) {
-             $(".navbar-toggler").click();
-         }
-     });
+$(document).on('click','.navbar-toggleable-xs.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});
 });
      
 
