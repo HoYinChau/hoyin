@@ -259,3 +259,16 @@ ul,li{
       padding: 15% 15%;
       font-size: 35px;
 }
+
+
+
+
+.project-name{
+  font-size: 36px;
+  line-height: unset;
+}
+
+
+.box-title{
+  font-size: 24px;
+}
