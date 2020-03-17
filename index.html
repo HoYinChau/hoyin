@@ -1,259 +1,217 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>GOR/GO/</title>
-        <link href='http://fonts.googleapis.com/css?family=Righteous&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/ionicons.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/style-gorgo.css" media="screen" />
-        <link rel="stylesheet" href="css/style-box.css" media="screen" />
-        <script src="js/modernizr.js"></script>
-        <style type="text/css">
-        </style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>HoYin</title>
+        <!-- <link rel="icon" href="img/fav.png" type="image/x-icon"> -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
+        <!--     <link href="ionicons/css/ionicons.min.css" rel="stylesheet">-->
+        <!-- box-headline css -->
+        <link href="css/box-headline.css" rel="stylesheet">
+        <<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+            <link rel="stylesheet" href="css/profo.css">
+            <link rel="stylesheet" href="css/custom.css">
+            <!-- modernizr -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+            <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]> 
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
     </head>
 
     <body>
-        <a href="#cd-nav" class="cd-nav-trigger">Menu
-            <span class="cd-nav-icon"></span>
-            <svg x="0px" y="0px" width="54px" height="54px" viewBox="0 0 54 54">
-                <circle fill="transparent" stroke="#90D4C5" stroke-width="2" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
-            </svg>
-        </a>
-        <div id="cd-nav" class="cd-nav">
-            <div class="cd-navigation-wrapper">
-                <div class="cd-half-block">
-                    <nav>
-                        <ul class="cd-primary-nav">
-                            <li><a href="index.html" class="selected">Showcase</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div><!-- .cd-half-block -->
-                <div class="cd-half-block">
-                    <address>
-                        <ul class="cd-contact-info">
-                            <li><a href="mailto:info@myemail.co">info@myemail.co</a></li>
-                            <li>0244-12345678</li>
-                        </ul>
-                        <ul class="cd-contact-socials">
-                            <li><a href="#top">op1</a></li>
-                            <li><a href="#op2">op2</a></li>
-                            <li><a href="#0">op3</a></li>
-                        </ul>
-                    </address>
-                </div> <!-- .cd-half-block -->
-            </div> <!-- .cd-navigation-wrapper -->
-        </div> <!-- .cd-nav -->
-        <div class="site-container">
-            <!-- box-intro -->
-            <section class="box-intro" id="top">
-                <div class="table-cell">
-                    <h1 class="box-headline letters rotate-2">
-                        <span class="box-words-wrapper">
-                            <b class="is-visible" style="color: #364287;">design.</b>
-                            <b>&nbsp;coding.</b>
-                            <b>graphic.</b>
-                        </span>
-                    </h1>
-                    <h5>everything you need to build your personal portfolio</h5>
-                </div>
-                <div class="mouse">
-                    <div class="scroll"></div>
-                </div>
-            </section>
-            <!-- end box-intro -->
-        </div>
-        <!--  filter -->
-        <div class="button-group filters-button-group">
-            <button class="button is-checked" data-filter="*">show all</button>
-            <button class="button" data-filter=".web">Website</button>
-            <button class="button" data-filter=".app">Application</button>
-            <button class="button" data-filter=".print">Print</button>
-        </div>
-        <!-- /filter -->
-        <section class="site-content">
-            <div class="projects-feed cf">
-                <div class="grid">
-                    <article class="project cf element-item web">
-                        <a href="portfolio-item.html" title="Craft Tamale">
-                            <div class="thumb">
-                                <div data-picture data-alt="">
-                                    <div data-src="img/portfolio-1.jpg"></div>
-                                    <!--[if (lt IE 9) & (!IEMobile)]>
-                                <div data-src="img/portfolio-1.jpg"></div>
-                                <![endif]-->
-                                    <noscript>
-                                        <img src="img/portfolio-1.jpg" alt="" />
-                                    </noscript>
+        <!-- Box headline -->
+        <section class="Box_Headline">
+            <div class="container-fluid">
+                <!-- box-intro -->
+                <section class="box-intro">
+                    <div class="table-cell">
+                        <h1 class="box-headline letters rotate-2">
+                            <span class="box-words-wrapper">
+                                <b class="is-visible">design.</b>
+                                <b>&nbsp;coding.</b>
+                                <b>graphic.</b>
+                            </span>
+                        </h1>
+                        <h5>everything you need to build your personal portfolio</h5>
+                    </div>
+                    <div class="mouse">
+                        <div class="scroll"></div>
+                    </div>
+                </section>
+                <!-- end box-intro -->
+            </div>
+        </section>
+        <!-- /Box headline -->
+        <!-- Profo -->
+        <section id="profo" class="probootstrap-section">
+            <!-- Filter -->
+            <div class="filters-button-group container-fluid text-center">
+                <button type="button" class="btn btn-outline-primary is-checked" data-filter="*">show all</button>
+                <button type="button" class="btn btn-primary" data-filter=".web">Website</button>
+                <button type="button" class="btn btn-primary" data-filter=".app">Apps</button>
+                <button type="button" class="btn btn-primary" data-filter=".brand">Brand</button>
+                <button type="button" class="btn btn-primary" data-filter=".print">Print</button>
+            </div>
+            <!-- /Filter -->
+            <div class="container-fluid justify-content-center">
+                <div class=" grid justify-content-center">
+                                        <div class="blog-slider element-item web">
+                        <div class="blog-slider__wrp swiper-wrapper">
+                            <div class="blog-slider__item swiper-slide">
+                                <div class="blog-slider__img sky">
+                                    <img src="img/sky/logo.png" class="img-fluid">
+                                </div>
+                                <div class="blog-slider__content">
+                                    <span class="blog-slider__code">Website</span>
+                                    <div class="blog-slider__title">晴報SkyPost</div>
+                                    <div class="blog-slider__text">A traditional newspaper.<br>revamp the website to better reading experience.</div>
+                                    <a href="#" class="blog-slider__button sky_button">READ MORE</a>
                                 </div>
                             </div>
-                            <div class="project-content-container">
-                                <div class="project-content">
-                                    <div class="table">
-                                        <div class="table-cell">
-                                            <h2 class="thumbnail-title">Craft Tamale</h2>
-                                            <p class="thumbnail-description">Print, Branding</p>
-                                        </div>
-                                    </div>
+                            <div class="blog-slider__item swiper-slide">
+                                <div class="blog-slider__img sky">
+                                    <img src="img/sky/home.png" class="img-fluid">
+                                </div>
+                                <div class="blog-slider__content">
+                                    <span class="blog-slider__code">March 2017</span>
+                                    <div class="blog-slider__title">Front - end Development</div>
+                                    <div class="blog-slider__text">Without a CMS system, each page are made by hand.</div>
+                                    <a href="#" class="blog-slider__button  sky_button">READ MORE</a>
                                 </div>
                             </div>
-                            <div class="overlay"></div>
-                        </a>
-                    </article>
-                    <article class="project cf element-item app">
-                        <a href="portfolio-item.html" title="IKEA Singapore">
-                            <div class="thumb">
-                                <div data-picture data-alt="">
-                                    <div data-src="img/portfolio-2.jpg"></div>
-                                    <!--[if (lt IE 9) & (!IEMobile)]>
-                                <div data-src="img/portfolio-2.jpg"></div>
-                                <![endif]-->
-                                    <noscript>
-                                        <img src="img/portfolio-2.jpg" alt="" />
-                                    </noscript>
+                            <div class="blog-slider__item swiper-slide">
+                                <div class="blog-slider__img sky">
+                                    <img src="img/sky/content.png" class="img-fluid">
+                                </div>
+                                <div class="blog-slider__content">
+                                    <span class="blog-slider__code">31 August 2019</span>
+                                    <div class="blog-slider__title">Digital Marketing</div>
+                                    <div class="blog-slider__text">Every words or even HTML code are considering SEO and marketing research</div>
+                                    <a href="#" class="blog-slider__button  sky_button">READ MORE</a>
                                 </div>
                             </div>
-                            <div class="project-content-container">
-                                <div class="project-content">
-                                    <div class="table">
-                                        <div class="table-cell">
-                                            <h2 class="thumbnail-title">IKEA Singapore</h2>
-                                            <p class="thumbnail-description">Advertising, Graphic Design</p>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="blog-slider__pagination"></div>
+                    </div>
+                    <div class="blog-slider element-item web">
+                        <div class="blog-slider__wrp swiper-wrapper">
+                            <div class="blog-slider__item swiper-slide">
+                                <div class="blog-slider__img mdl">
+                                    <img src="img/mdl/logo.png" class="img-fluid">
+                                </div>
+                                <div class="blog-slider__content">
+                                    <span class="blog-slider__code">Website</span>
+                                    <div class="blog-slider__title">MediLase</div>
+                                    <div class="blog-slider__text">A beauty service company<br>show as hight-tech & good services.</div>
+                                    <a href="#" class="blog-slider__button mdl_button">READ MORE</a>
                                 </div>
                             </div>
-                            <div class="overlay"></div>
-                        </a>
-                    </article>
-                    <article class="project cf element-item print">
-                        <a href="portfolio-item.html" title="Comuna">
-                            <div class="thumb">
-                                <div data-picture data-alt="">
-                                    <div data-src="img/portfolio-3.jpg"></div>
-                                    <!--[if (lt IE 9) & (!IEMobile)]>
-                                <div data-src="img/portfolio-3.jpg"></div>
-                                <![endif]-->
-                                    <noscript>
-                                        <img src="img/portfolio-3.jpg" alt="" />
-                                    </noscript>
+                            <div class="blog-slider__item swiper-slide">
+                                <div class="blog-slider__img mdl">
+                                    <img src="img/mdl/home.png" class="img-fluid">
+                                </div>
+                                <div class="blog-slider__content">
+                                    <span class="blog-slider__code">March 2017</span>
+                                    <div class="blog-slider__title">Front - end Development</div>
+                                    <div class="blog-slider__text">Without a CMS system, each page are made by hand.</div>
+                                    <a href="#" class="blog-slider__button  mdl_button">READ MORE</a>
                                 </div>
                             </div>
-                            <div class="project-content-container">
-                                <div class="project-content">
-                                    <div class="table">
-                                        <div class="table-cell">
-                                            <h2 class="thumbnail-title">Comuna</h2>
-                                            <p class="thumbnail-description">Branding, Graphic Design, Webdesign</p>
-                                        </div>
-                                    </div>
+                            <div class="blog-slider__item swiper-slide">
+                                <div class="blog-slider__img mdl">
+                                    <img src="img/mdl/service.png" class="img-fluid">
+                                </div>
+                                <div class="blog-slider__content">
+                                    <span class="blog-slider__code">31 August 2019</span>
+                                    <div class="blog-slider__title">Digital Marketing</div>
+                                    <div class="blog-slider__text">Every words or even HTML code are considering SEO and marketing research</div>
+                                    <a href="#" class="blog-slider__button  mdl_button">READ MORE</a>
                                 </div>
                             </div>
-                            <div class="overlay"></div>
-                        </a>
-                    </article>
-                    <article class="project cf element-item web">
-                        <a href="portfolio-item.html" title="Wearetheshit">
-                            <div class="thumb">
-                                <div data-picture data-alt="">
-                                    <div data-src="img/portfolio-5.jpg"></div>
-                                    <!--[if (lt IE 9) & (!IEMobile)]>
-                                <div data-src="img/portfolio-5.jpg"></div>
-                                <![endif]-->
-                                    <noscript>
-                                        <img src="img/portfolio-5.jpg" alt="" />
-                                    </noscript>
+                        </div>
+                        <div class="blog-slider__pagination"></div>
+                    </div>
+                    <div class="blog-slider element-item web">
+                        <div class="blog-slider__wrp swiper-wrapper">
+                            <div class="blog-slider__item swiper-slide">
+                                <div class="blog-slider__img tmf">
+                                    <img src="img/tmf/tmf_logo.jpg" class="img-fluid">
+                                </div>
+                                <div class="blog-slider__content">
+                                    <span class="blog-slider__code">Website</span>
+                                    <div class="blog-slider__title">家匠TMF</div>
+                                    <div class="blog-slider__text">A large company of furniture retail.<br>
+                                    Brand new website to introduce the growing business.</div>
+                                    <a href="#" class="blog-slider__button tmf_button">READ MORE</a>
                                 </div>
                             </div>
-                            <div class="project-content-container">
-                                <div class="project-content">
-                                    <div class="table">
-                                        <div class="table-cell">
-                                            <h2 class="thumbnail-title">Wearetheshit</h2>
-                                            <p class="thumbnail-description">Webdesign, Advertising, Branding</p>
-                                        </div>
-                                    </div>
+                            <div class="blog-slider__item swiper-slide">
+                                <div class="blog-slider__img tmf">
+                                    <img src="img/tmf/page_1.png" class="img-fluid">
+                                </div>
+                                <div class="blog-slider__content">
+                                    <span class="blog-slider__code">01 August 2016</span>
+                                    <div class="blog-slider__title">Front-end Devlopment</div>
+                                    <div class="blog-slider__text">Base on wordpress framework to develop a new theme.</div>
+                                    <a href="#" class="blog-slider__button tmf_button">READ MORE</a>
                                 </div>
                             </div>
-                            <div class="overlay"></div>
-                        </a>
-                    </article>
-                    <article class="project cf element-item app">
-                        <a href="portfolio-item.html" title="Chamba para Creativos">
-                            <div class="thumb">
-                                <div data-picture data-alt="">
-                                    <div data-src="img/portfolio-6.jpg"></div>
-                                    <!--[if (lt IE 9) & (!IEMobile)]>
-                                <div data-src="img/portfolio-6.jpg"></div>
-                                <![endif]-->
-                                    <noscript>
-                                        <img src="img/portfolio-6.jpg" alt="" />
-                                    </noscript>
+                            <div class="blog-slider__item swiper-slide">
+                                <div class="blog-slider__img tmf">
+                                    <img src="img/tmf/page_2.png" class="img-fluid">
+                                </div>
+                                <div class="blog-slider__content">
+                                    <span class="blog-slider__code">31 November 2016</span>
+                                    <div class="blog-slider__title">UX/UI</div>
+                                    <div class="blog-slider__text">Design for showcase & product<br>
+                                    also integrate with existing system.</div>
+                                    <a href="#" class="blog-slider__button tmf_button">READ MORE</a>
                                 </div>
                             </div>
-                            <div class="project-content-container">
-                                <div class="project-content">
-                                    <div class="table">
-                                        <div class="table-cell">
-                                            <h2 class="thumbnail-title">Chamba para Creativos</h2>
-                                            <p class="thumbnail-description">Branding, Packaging, UI/UX</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="overlay"></div>
-                        </a>
-                    </article>
-                    <!--END .projects-feed-->
+                        </div>
+                        <div class="blog-slider__pagination"></div>
+                    </div>
                 </div>
             </div>
-            <!--END .site-content-->
         </section>
-        <footer class="site-footer cf" id="op3">
-            <p class="footer-text">© Copyright 2015 </p>
-            <nav class="languages" role="navigation">
-                <ul>
-                    <li class="active"><a href="#">EN |</a></li>
-                    <li><a href="#">FR</a></li>
-                </ul>
-            </nav>
-        </footer>
-        <!--END .site-container-->
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-        <script src="js/jquery.fitvids.js"></script>
-        <script src="js/jquery.imagesloaded.min.js"></script>
+        <!-- /Profo -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
         <script src="js/animated-headline.js"></script>
-        <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/menu.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/custom.js"></script>
-        <!--  plugins -->
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
         <script type="text/javascript">
-            // external js: isotope.pkgd.js
-
             // external js: isotope.pkgd.js
 
             // init Isotope
             var $container = $('.element-item');
             var $grid = $('.grid').isotope({
                 itemSelector: '.element-item',
-                resizable: false, // disable normal resizing
-                fitWidth: true,
-                isOriginLeft: true,
+                layoutMode: 'masonry',
                 masonry: {
-                    percentPosition: true
+                    isFitWidth: true,
+                    gutter: 80
                 }
-
-                // layoutMode: 'fitRows'
-                // }
             });
 
             // bind filter button click
@@ -270,6 +228,19 @@
                     $buttonGroup.find('.is-checked').removeClass('is-checked');
                     $(this).addClass('is-checked');
                 });
+            });
+            var swiper = new Swiper('.blog-slider', {
+                spaceBetween: 30,
+                effect: 'fade',
+                loop: true,
+                mousewheel: {
+                    invert: false,
+                },
+                // autoHeight: true,
+                pagination: {
+                    el: '.blog-slider__pagination',
+                    clickable: true,
+                }
             });
 
         </script>
