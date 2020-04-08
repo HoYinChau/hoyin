@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HoYin - MediLase</title>
+        <link rel="icon" href="img/fav.svg" type="image/x-icon">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/in_page.css">
+        <!-- Magnific Popup core CSS file -->
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]> 
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    <style type="text/css">
+        .top-bg {
+            background-image: url(img/mdl/top-bg.jpg);
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .bottom-bg {
+            background-image: url(img/mdl/bottom-bg.jpg);
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .showcase {
+            /*            background-position: center;
+*/
+            /*min-height: 100vh;*/
+            /*            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;*/
+            position: relative;
+        }
+
+        .overlay-img-client {
+            position: relative;
+            background-image: url(img/mdl/client.jpg);
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .overlay-img-tech {
+            position: relative;
+            background-image: url(img/mdl/tech.jpg);
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .overlay-img-QA {
+            position: relative;
+            background-image: url(img/mdl/Q&A.jpg);
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .overlay-img-contact {
+            position: relative;
+            background-image: url(img/mdl/contact.jpg);
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .bottom-bg-overlay {
+            background-color: #645e64cc;
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .blur-card {
+            backdrop-filter: blur(10px);
+            background-color: #00000022;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: unset;
+            border-radius: 0px;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: unset;
+            border-radius: 0px;
+        }
+
+        /*        @media (max-width: 576px) {
+        .blur-card {
+            min-width: 85vw;
+        }
+
+}
+        @media (max-width: 768px) {
+        .blur-card {
+            min-width: 85vw;
+        }
+
+}*/
+        @media (max-width: 992px) {
+            .blur-card {
+                min-width: 85vw;
+            }
+        }
+
+    </style>
+
+    <body>
+        <div class="top-bg">
+        </div>
+        <div class="container-fluid ">
+            <div class="row mt-5 mb-5">
+                <!-- Card -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                    <div class="card card-image red_card">
+                        <!-- Content -->
+                        <div class="text-white d-flex align-items-center py-4 px-4" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <div>
+                                <p class="white-text float-right card_header">
+                                    <i class="card_icon fas fa-user-tie fa-9x"></i>
+                                    <h1 class="card-title pt-2 float-left white-text">MediLase</h1>
+                                </p>
+                                <div class="clearfix"></div>
+                                <!-- Collapsible element -->
+                                <div class="collapse" id="collapseExample">
+                                    A Health care and beauty company.<br> Mainly focus on hair remove.
+                                </div>
+                                <!-- / Collapsible element -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <!-- Card -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                    <div class="card card-image blue_card">
+                        <!-- Content -->
+                        <div class="text-white d-flex align-items-center py-4 px-4" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <div>
+                                <p class="white-text float-right card_header">
+                                    <i class="card_icon fas fa-calendar-check fa-9x"></i>
+                                    <h1 class="card-title pt-2 float-left white-text">1 Year & 5 Month</h1>
+                                </p>
+                                <div class="clearfix"></div>
+                                <!-- Collapsible element -->
+                                <div class="collapse" id="collapseExample">
+                                    March 2017 - 31 August 2018
+                                </div>
+                                <!-- / Collapsible element -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <!-- Card -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-4 ">
+                    <div class="card card-image green_card">
+                        <!-- Content -->
+                        <div class="text-white d-flex align-items-center py-4 px-4" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <div>
+                                <p class="white-text float-right card_header">
+                                    <i class="card_icon fas fa-code-branch fa-9x"></i>
+                                    <h1 class="card-title pt-2 float-left white-text">10+ version</h1>
+                                </p>
+                                <div class="clearfix"></div>
+                                <!-- Collapsible element -->
+                                <div class="collapse" id="collapseExample">
+                                    <p>1 revamp <br> 10+ marketing landing page</p>
+                                </div>
+                                <!-- / Collapsible element -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <!-- Card -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-4 mb-4">
+                    <div class="card card-image purple_card">
+                        <!-- Content -->
+                        <div class="text-white d-flex align-items-center py-4 px-4" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <div>
+                                <p class="white-text float-right card_header">
+                                    <i class="card_icon fas fa-money-check-alt fa-9x"></i>
+                                    <h1 class="card-title pt-2 float-left white-text">Web Developer</h1>
+                                </p>
+                                <div class="clearfix"></div>
+                                <!-- Collapsible element -->
+                                <div class="collapse" id="collapseExample">
+                                    - Front-end develop <br>
+                                    - eDM <br>
+                                    - UX design
+                                </div>
+                                <!-- / Collapsible element -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+            </div>
+        </div>
+        <div class="showcase mb-5">
+            <div class="col-lg-12 overlay-img-client p-0 m-0 ">
+                <!-- <img src="img/iS/left.jpg" class="img-fluid"> -->
+                <div class="overlay text-center ">
+                    <h1 class="">Draft</h1>
+                    - Start with 3 draft for Client's feedback <br>
+                    - Positive feedback and keep going on
+                </div>
+            </div>
+            <div class="col-lg-12  overlay-img-QA p-0 m-0">
+                <!-- <img src="img/iS/right.jpg" class="img-fluid"> -->
+                <div class="overlay text-center">
+                    <h1>Final</h1>
+                    - After a big return<br>
+                    - Everything change (color,type,graphic)
+                </div>
+            </div>
+            <div class="col-lg-12 overlay-img-tech p-0 m-0 ">
+                <!-- <img src="img/iS/left.jpg" class="img-fluid"> -->
+                <div class="overlay text-center ">
+                    <h1 class="">Draft</h1>
+                    - Start with 3 draft for Client's feedback <br>
+                    - Positive feedback and keep going on
+                </div>
+            </div>
+            <div class="col-lg-12  overlay-img-contact p-0 m-0">
+                <!-- <img src="img/iS/right.jpg" class="img-fluid"> -->
+                <div class="overlay text-center">
+                    <h1>Final</h1>
+                    - After a big return<br>
+                    - Everything change (color,type,graphic)
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bg ">
+            <div class="bottom-bg-overlay">
+                <div class="card blur-card">
+                    <!-- Content -->
+                    <div class="text-white d-flex align-items-center py-4 px-4">
+                        <div>
+                            <div class="clearfix"></div>
+                            <p>The first project i take when i onboard.</p>
+                            <p>Just know i need to design a mobile app & website & kiosk, but no instruction / guideline.</p>
+                            <p>After presenting 3 draft to Client, and feedback come, keep going to design other screen.</p>
+                            <p>So far, it's in good progress.</p>
+                            <h1>But,</h1>
+                            <p>Because of the original team(Client) has change / passed to other team, Everything have to follow now.</p>
+                            <p>So, i need to redo the previous work again, and you know the time isn't count in.</p>
+                            <p>Finally, it come up with a bad design(personal).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="float_btn">
+            <a href="./index.html" class="float">
+                <i class="fa fa-reply my-float"></i>
+            </a>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {});
+
+
+
+            // Hide Header on on scroll down
+            var didScroll;
+            var lastScrollTop = 0;
+            var delta = 5;
+            var navbarHeight = $('.float_btn').outerHeight();
+
+            $(window).scroll(function(event) {
+                didScroll = true;
+            });
+
+            setInterval(function() {
+                if (didScroll) {
+                    hasScrolled();
+                    didScroll = false;
+                }
+            }, 250);
+
+            function hasScrolled() {
+                var st = $(this).scrollTop();
+
+                // Make sure they scroll more than delta
+                if (Math.abs(lastScrollTop - st) <= delta)
+                    return;
+
+                // If they scrolled down and are past the navbar, add class .nav-up.
+                // This is necessary so you never see what is "behind" the navbar.
+                if (st > lastScrollTop && st > navbarHeight) {
+                    // Scroll Down
+                    $('.float_btn').removeClass('nav-down').addClass('float_btn_none');
+                } else {
+                    // Scroll Up
+                    if (st + $(window).height() < $(document).height()) {
+                        $('.float_btn').removeClass('float_btn_none').addClass('nav-down');
+                    }
+                }
+
+                lastScrollTop = st;
+            }
+            $('.toast').toast('show');
+
+        </script>
+    </body>
+
+</html>
