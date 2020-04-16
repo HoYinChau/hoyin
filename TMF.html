@@ -40,12 +40,11 @@
         }
 
         .showcase {
-            /*            background-position: center;
-*/
-            /*min-height: 100vh;*/
-            /*            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
             background-repeat: no-repeat;
-            background-attachment: fixed;*/
+            background-attachment: fixed;
             position: relative;
         }
 
@@ -110,12 +109,37 @@
         }
 
         .overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: relative;
+            top: 20%;
+            /*            position: absolute;
+            top: 20%;
+            left: 0%;
+            transform: translate(0%, -20%);*/
             box-shadow: unset;
             border-radius: 0px;
+
+        }
+
+        .btn-blur-bg {
+            backdrop-filter: blur(10px);
+            background-color: #ffffff00 !important;
+            color: #1C8DC9;
+            padding: 1em;
+        }
+
+        .btn-blur-bg:hover,
+        .btn-blur-bg:focus {
+            color: #fff;
+            background-color: #1C8DC9 !important;
+
+        }
+
+        .modal-header {
+            border-color: #1C8DC9;
+        }
+
+        .modal-footer {
+            border-color: #1C8DC9;
         }
 
         /*        @media (max-width: 576px) {
@@ -133,6 +157,14 @@
         @media (max-width: 992px) {
             .blur-card {
                 min-width: 85vw;
+            }
+
+            .overlay-img-left {
+                background-size: cover;
+            }
+
+            .overlay-img-right {
+                background-size: cover;
             }
         }
 
@@ -156,7 +188,7 @@
                                 <div class="clearfix"></div>
                                 <!-- Collapsible element -->
                                 <div class="collapse" id="collapseExample">
-                                    A member of Pricerite Group, a custom furniture store. 
+                                    A subsidiary of Pricerite Group, a custom furniture store.
                                 </div>
                                 <!-- / Collapsible element -->
                             </div>
@@ -198,7 +230,7 @@
                                 <div class="clearfix"></div>
                                 <!-- Collapsible element -->
                                 <div class="collapse" id="collapseExample">
-                                    - 1 Prototype <br> 
+                                    - 1 Prototype <br>
                                     - 1 Final
                                 </div>
                                 <!-- / Collapsible element -->
@@ -220,10 +252,8 @@
                                 <div class="clearfix"></div>
                                 <!-- Collapsible element -->
                                 <div class="collapse" id="collapseExample">
-                                  
-                                        - Front-end develop <br>
-                                        - Web design
-                                   
+                                    - Front-end develop <br>
+                                    - Web design
                                 </div>
                                 <!-- / Collapsible element -->
                             </div>
@@ -233,37 +263,111 @@
                 <!-- Card -->
             </div>
         </div>
-        <div class="showcase mb-5">
+        <div class="showcase row p-0 m-0">
             <div class="col-lg-12 overlay-img-intro p-0 m-0 ">
-                <!-- <img src="img/iS/left.jpg" class="img-fluid"> -->
-                <div class="overlay text-center ">
-                    <h1 class="">Draft</h1>
-                    - Start with 3 draft for Client's feedback <br>
-                    - Positive feedback and keep going on
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#intro-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="intro-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">New website</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>A whole new website for this business.</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-12  overlay-img-product p-0 m-0">
-                <!-- <img src="img/iS/right.jpg" class="img-fluid"> -->
-                <div class="overlay text-center">
-                    <h1>Final</h1>
-                    - After a big return<br>
-                    - Everything change (color,type,graphic)
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#product-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="product-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">New website</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>The purpose is to show to public what they can do.</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-12 overlay-img-about p-0 m-0 ">
-                <!-- <img src="img/iS/left.jpg" class="img-fluid"> -->
-                <div class="overlay text-center ">
-                    <h1 class="">Draft</h1>
-                    - Start with 3 draft for Client's feedback <br>
-                    - Positive feedback and keep going on
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#about-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">New website</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Reference to the print leaflet in retail store.</p>
+                                <p>The website use similar design.</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-12  overlay-img-showcase p-0 m-0">
-                <!-- <img src="img/iS/right.jpg" class="img-fluid"> -->
-                <div class="overlay text-center">
-                    <h1>Final</h1>
-                    - After a big return<br>
-                    - Everything change (color,type,graphic)
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#showcase-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="showcase-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">New website</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>A good-looking website come out.</p>
+                                
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -274,14 +378,10 @@
                     <div class="text-white d-flex align-items-center py-4 px-4">
                         <div>
                             <div class="clearfix"></div>
-                            <p>The first project i take when i onboard.</p>
-                            <p>Just know i need to design a mobile app & website & kiosk, but no instruction / guideline.</p>
-                            <p>After presenting 3 draft to Client, and feedback come, keep going to design other screen.</p>
-                            <p>So far, it's in good progress.</p>
-                            <h1>But,</h1>
-                            <p>Because of the original team(Client) has change / passed to other team, Everything have to follow now.</p>
-                            <p>So, i need to redo the previous work again, and you know the time isn't count in.</p>
-                            <p>Finally, it come up with a bad design(personal).</p>
+                            <p>The first job.</p>
+                            <p>i'm just graduate, luckily i've done a few website before.</p>
+                            <p>For my career strat, must do it well.</p>
+                            <p><a href="https://imgur.com/a/a3SF2fe" target="_blank"><button type="button" class="btn btn-outline-white waves-effect">Detail photo</button></a></p>
                         </div>
                     </div>
                 </div>

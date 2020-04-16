@@ -28,6 +28,7 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
+
         .bottom-bg {
             background-image: url(img/sky/bottom-bg.jpg);
             background-position: center;
@@ -38,13 +39,13 @@
             position: relative;
         }
 
+
         .showcase {
-            /*            background-position: center;
-*/
-            /*min-height: 100vh;*/
-            /*            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
             background-repeat: no-repeat;
-            background-attachment: fixed;*/
+            background-attachment: fixed;
             position: relative;
         }
 
@@ -109,12 +110,37 @@
         }
 
         .overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: relative;
+            top: 20%;
+            /*            position: absolute;
+            top: 20%;
+            left: 0%;
+            transform: translate(0%, -20%);*/
             box-shadow: unset;
             border-radius: 0px;
+
+        }
+
+        .btn-blur-bg {
+            backdrop-filter: blur(10px);
+            background-color: #ffffff00 !important;
+            color: #1C8DC9;
+            padding: 1em;
+        }
+
+        .btn-blur-bg:hover,
+        .btn-blur-bg:focus {
+            color: #fff;
+            background-color: #1C8DC9 !important;
+
+        }
+
+        .modal-header {
+            border-color: #1C8DC9;
+        }
+
+        .modal-footer {
+            border-color: #1C8DC9;
         }
 
         /*        @media (max-width: 576px) {
@@ -133,13 +159,20 @@
             .blur-card {
                 min-width: 85vw;
             }
+
+            .overlay-img-left {
+                background-size: cover;
+            }
+
+            .overlay-img-right {
+                background-size: cover;
+            }
         }
 
     </style>
 
     <body>
         <div class="top-bg">
-            
         </div>
         <div class="container-fluid ">
             <div class="row mt-5 mb-5">
@@ -156,7 +189,7 @@
                                 <div class="clearfix"></div>
                                 <!-- Collapsible element -->
                                 <div class="collapse" id="collapseExample">
-                                    A tranditional print newspaper company.<br> A member of Hong Kong Economic Times group.
+                                    A tranditional print newspaper company.<br> A subsidary of Hong Kong Economic Times group.
                                 </div>
                                 <!-- / Collapsible element -->
                             </div>
@@ -231,37 +264,111 @@
                 <!-- Card -->
             </div>
         </div>
-        <div class="showcase mb-5">
-            <div class="col-lg-12 overlay-img-cata-before p-0 m-0 ">
-                <!-- <img src="img/iS/left.jpg" class="img-fluid"> -->
-                <div class="overlay text-center ">
-                    <h1 class="">Draft</h1>
-                    - Start with 3 draft for Client's feedback <br>
-                    - Positive feedback and keep going on
+        <div class="showcase row p-0 m-0">
+            <div class="col-lg-12  overlay-img-cata-before p-0 m-0">
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#cata-before-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="cata-before-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Revamp</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Transfer a old website to latest trend</p>
+                                <p>As a big company, there are some reference & guideline.</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-12  overlay-img-cata-after p-0 m-0">
-                <!-- <img src="img/iS/right.jpg" class="img-fluid"> -->
-                <div class="overlay text-center">
-                    <h1>Final</h1>
-                    - After a big return<br>
-                    - Everything change (color,type,graphic)
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#cata-after-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="cata-after-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Revamp</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Great plan but development are not.</p>
+                                <p>Not much resources on programmer, so it can't launch as propose.</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-12 overlay-img-person-before p-0 m-0 ">
-                <!-- <img src="img/iS/left.jpg" class="img-fluid"> -->
-                <div class="overlay text-center ">
-                    <h1 class="">Draft</h1>
-                    - Start with 3 draft for Client's feedback <br>
-                    - Positive feedback and keep going on
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#person-before-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="person-before-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Revamp</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>For some reason, i have to help on development.</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-12  overlay-img-person-after p-0 m-0">
-                <!-- <img src="img/iS/right.jpg" class="img-fluid"> -->
-                <div class="overlay text-center">
-                    <h1>Final</h1>
-                    - After a big return<br>
-                    - Everything change (color,type,graphic)
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#person-after-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="person-after-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Revamp</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Finally it launch, but i'm alreadly left.</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -272,14 +379,10 @@
                     <div class="text-white d-flex align-items-center py-4 px-4">
                         <div>
                             <div class="clearfix"></div>
-                            <p>The first project i take when i onboard.</p>
-                            <p>Just know i need to design a mobile app & website & kiosk, but no instruction / guideline.</p>
-                            <p>After presenting 3 draft to Client, and feedback come, keep going to design other screen.</p>
-                            <p>So far, it's in good progress.</p>
-                            <h1>But,</h1>
-                            <p>Because of the original team(Client) has change / passed to other team, Everything have to follow now.</p>
-                            <p>So, i need to redo the previous work again, and you know the time isn't count in.</p>
-                            <p>Finally, it come up with a bad design(personal).</p>
+                            <p>This is the first time to work in a big company.</p>
+                            <p>Felling good at the beginning.</p>
+                            <p>Discipline, Limitation, are there. Well division of work too.</p>
+                            <p><a href="https://imgur.com/a/uQ35u8B" target="_blank"><button type="button" class="btn btn-outline-white waves-effect">Befor & After</button></a></p>
                         </div>
                     </div>
                 </div>

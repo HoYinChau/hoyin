@@ -110,12 +110,37 @@
         }
 
         .overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: relative;
+            top: 20%;
+            /*            position: absolute;
+            top: 20%;
+            left: 0%;
+            transform: translate(0%, -20%);*/
             box-shadow: unset;
             border-radius: 0px;
+
+        }
+
+        .btn-blur-bg {
+            backdrop-filter: blur(10px);
+            background-color: #ffffff00 !important;
+            color: #1C8DC9;
+            padding: 1em;
+        }
+
+        .btn-blur-bg:hover,
+        .btn-blur-bg:focus {
+            color: #fff;
+            background-color: #1C8DC9 !important;
+
+        }
+
+        .modal-header {
+            border-color: #1C8DC9;
+        }
+
+        .modal-footer {
+            border-color: #1C8DC9;
         }
 
         /*        @media (max-width: 576px) {
@@ -241,35 +266,126 @@
         </div>
         <div class="showcase row p-0 m-0">
             <div class="col-lg-12 overlay-img-home-before p-0 m-0 ">
-                <!-- <img src="img/iS/left.jpg" class="img-fluid"> -->
-                <div class="overlay text-center ">
-                    <h1 class="">Draft</h1>
-                    - Start with 3 draft for Client's feedback <br>
-                    - Positive feedback and keep going on
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#home-before-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="home-before-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Start with draft</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>3 draft to present to Client.</p>
+                                <p>Which is no guildline when i start.</p>
+                                <p>
+                                    <a href="https://xd.adobe.com/view/d7469c39-e400-475e-5a78-125b6a8bee3f-a177/" target="_blank"><button type="button" class="btn btn-outline-black waves-effect">Draft 1</button></a>
+                                    <a href="https://xd.adobe.com/view/8ca7ecc8-527e-4c12-4639-414ff857aca4-fa96/?hints=off" target="_blank"><button type="button" class="btn btn-outline-black waves-effect">Draft 2</button></a>
+                                    <a href="https://xd.adobe.com/view/0e23de3c-0de7-4b1f-592e-476c9a46edff-7812/?hints=off" target="_blank"><button type="button" class="btn btn-outline-black waves-effect">Draft 3</button></a>
+                                </p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-12  overlay-img-home-after p-0 m-0">
-                <!-- <img src="img/iS/right.jpg" class="img-fluid"> -->
-                <div class="overlay text-center">
-                    <h1>Final</h1>
-                    - After a big return<br>
-                    - Everything change (color,type,graphic)
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#home-after-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="home-after-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">When the feed back come</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Keep going with the concept that Client like.</p>
+                                <p>So far, it's good.</p>
+                                <p>
+                                    <a href="https://xd.adobe.com/view/91290b08-1fbc-43be-5feb-15f0039f1234-e718/?fullscreen" target="_blank"><button type="button" class="btn btn-outline-black waves-effect">Adobe XD</button></a>
+                                </p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-12 overlay-img-profile-before p-0 m-0 ">
-                <!-- <img src="img/iS/left.jpg" class="img-fluid"> -->
-                <div class="overlay text-center ">
-                    <h1 class="">Draft</h1>
-                    - Start with 3 draft for Client's feedback <br>
-                    - Positive feedback and keep going on
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#profile-before-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="profile-before-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Everything change</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Suddenly, Client want a change.</p>
+                                <p>Color, Type, Graphic, Flow</p>
+                                <p>And we must to follow.</p>
+                                <p>Means i have to redo everything.</p>
+                                <p>
+                                    <a href="https://xd.adobe.com/view/35d559ff-d814-4698-733d-5dd8e10091d3-43e4/" target="_blank"><button type="button" class="btn btn-outline-black waves-effect">Adobe XD</button></a>
+                                </p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-12  overlay-img-profile-after p-0 m-0">
-                <!-- <img src="img/iS/right.jpg" class="img-fluid"> -->
-                <div class="overlay text-center">
-                    <h1>Final</h1>
-                    - After a big return<br>
-                    - Everything change (color,type,graphic)
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#profile-after-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="profile-after-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Finally</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>It look very different from the beginning.</p>
+                                <p>
+                                    <a href="http://bit.ly/istorage-app" target="_blank"><button type="button" class="btn btn-outline-black waves-effect">Adobe XD</button></a>
+                                </p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -288,6 +404,9 @@
                             <p>Because of the original team(Client) has change / passed to other team, Everything have to follow now.</p>
                             <p>So, i need to redo the previous work again, and you know the time isn't count in.</p>
                             <p>Finally, it come up with a bad design(personal).</p>
+                             <p>
+                                    <a href="http://bit.ly/istorage-app" target="_blank"><button type="button" class="btn btn-outline-white waves-effect">Adobe XD</button></a>
+                                </p>
                         </div>
                     </div>
                 </div>

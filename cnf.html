@@ -68,16 +68,6 @@
             background-attachment: fixed;
         }
 
-        .overlay-img-event {
-            position: relative;
-            background-image: url(img/cnf/event.jpg);
-            background-position: center;
-            min-height: 100vh;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-
         .overlay-img-detail {
             position: relative;
             background-image: url(img/cnf/detail.jpg);
@@ -88,9 +78,19 @@
             background-attachment: fixed;
         }
 
-        .overlay-img-contact {
+        .overlay-img-support {
             position: relative;
-            background-image: url(img/cnf/contact.jpg);
+            background-image: url(img/cnf/support.jpg);
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        .overlay-img-ticket {
+            position: relative;
+            background-image: url(img/cnf/ticket.jpg);
             background-position: center;
             min-height: 100vh;
             background-size: cover;
@@ -110,12 +110,37 @@
         }
 
         .overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: relative;
+            top: 20%;
+            /*            position: absolute;
+            top: 20%;
+            left: 0%;
+            transform: translate(0%, -20%);*/
             box-shadow: unset;
             border-radius: 0px;
+
+        }
+
+        .btn-blur-bg {
+            backdrop-filter: blur(10px);
+            background-color: #ffffff00 !important;
+            color: #1C8DC9;
+            padding: 1em;
+        }
+
+        .btn-blur-bg:hover,
+        .btn-blur-bg:focus {
+            color: #fff;
+            background-color: #1C8DC9 !important;
+
+        }
+
+        .modal-header {
+            border-color: #1C8DC9;
+        }
+
+        .modal-footer {
+            border-color: #1C8DC9;
         }
 
         /*        @media (max-width: 576px) {
@@ -180,12 +205,12 @@
                             <div>
                                 <p class="white-text float-right card_header">
                                     <i class="card_icon fas fa-calendar-check fa-9x"></i>
-                                    <h1 class="card-title pt-2 float-left white-text">9 Month</h1>
+                                    <h1 class="card-title pt-2 float-left white-text">6 Month</h1>
                                 </p>
                                 <div class="clearfix"></div>
                                 <!-- Collapsible element -->
                                 <div class="collapse" id="collapseExample">
-                                    05 July 2019 - 20 Jan 2019
+                                    05 July 2019 - 20 January 2020
                                 </div>
                                 <!-- / Collapsible element -->
                             </div>
@@ -208,7 +233,7 @@
                                 <div class="collapse" id="collapseExample">
                                     - 3 draft <br>
                                     - 1 Final <br>
-                                    </div>
+                                </div>
                                 <!-- / Collapsible element -->
                             </div>
                         </div>
@@ -242,35 +267,113 @@
         </div>
         <div class="showcase row p-0 m-0">
             <div class="col-lg-12 overlay-img-product p-0 m-0 ">
-                <!-- <img src="img/iS/left.jpg" class="img-fluid"> -->
-                <div class="overlay text-center ">
-                    <h1 class="">Draft</h1>
-                    - Start with 3 draft for Client's feedback <br>
-                    - Positive feedback and keep going on
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#product-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
                 </div>
-            </div>
-            <div class="col-lg-12  overlay-img-event p-0 m-0">
-                <!-- <img src="img/iS/right.jpg" class="img-fluid"> -->
-                <div class="overlay text-center">
-                    <h1>Final</h1>
-                    - After a big return<br>
-                    - Everything change (color,type,graphic)
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="product-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Strat with 3 Draft</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>By requirement: Information & professional</p>
+                                <p>3 draft are very similar, but the listing layout.</p>
+                                <a href="https://sketch.cloud/s/abm3p" target="_blank"><button type="button" class="btn btn-outline-dark waves-effect">Sketch</button></a>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-12 overlay-img-detail p-0 m-0 ">
-                <!-- <img src="img/iS/left.jpg" class="img-fluid"> -->
-                <div class="overlay text-center ">
-                    <h1 class="">Draft</h1>
-                    - Start with 3 draft for Client's feedback <br>
-                    - Positive feedback and keep going on
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#detail-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="detail-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Product detail page</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Each product are very specific, so it need many text.</p>
+                                <p>Different product have a different laout, depend on product features.</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-12  overlay-img-contact p-0 m-0">
-                <!-- <img src="img/iS/right.jpg" class="img-fluid"> -->
-                <div class="overlay text-center">
-                    <h1>Final</h1>
-                    - After a big return<br>
-                    - Everything change (color,type,graphic)
+            <div class="col-lg-12  overlay-img-support p-0 m-0">
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#support-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="support-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Support portal</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Open to client for system support.</p>
+                                <p>Same as ticket system.</p>
+                                <a href="https://sketch.cloud/s/Z4Vd3/a/gdZvDM" target="_blank"><button type="button" class="btn btn-outline-dark waves-effect">Sketch</button></a>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class="col-lg-12  overlay-img-ticket p-0 m-0">
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#ticket-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="ticket-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">New ticket page</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Simplify the step and layout.</p>
+                                <p>Show the info and from cleanly.</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -281,14 +384,11 @@
                     <div class="text-white d-flex align-items-center py-4 px-4">
                         <div>
                             <div class="clearfix"></div>
-                            <p>The first project i take when i onboard.</p>
-                            <p>Just know i need to design a mobile app & website & kiosk, but no instruction / guideline.</p>
-                            <p>After presenting 3 draft to Client, and feedback come, keep going to design other screen.</p>
-                            <p>So far, it's in good progress.</p>
+                            <p>A information website is hard to make it creative.</p>
+                            <p>Keep it clean and easy to read is the purpose.</p>
                             <h1>But,</h1>
-                            <p>Because of the original team(Client) has change / passed to other team, Everything have to follow now.</p>
-                            <p>So, i need to redo the previous work again, and you know the time isn't count in.</p>
-                            <p>Finally, it come up with a bad design(personal).</p>
+                            <p>Finding some place to have fun is important.</p>
+                            <p><a href="https://sketch.cloud/s/abm3p" target="_blank"><button type="button" class="btn btn-outline-white waves-effect">Sketch</button></a></p>
                         </div>
                     </div>
                 </div>

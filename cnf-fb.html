@@ -24,7 +24,8 @@
             background-image: url(img/cnf-fb/top-bg.jpg);
             background-position: center;
             min-height: 100vh;
-            background-size: cover;
+            background-size: contain;
+            background-color: #e8e8e8;
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
@@ -33,7 +34,8 @@
             background-image: url(img/cnf-fb/bottom-bg.jpg);
             background-position: center;
             min-height: 100vh;
-            background-size: cover;
+            background-size: contain;
+            background-color: #e8e8e8;
             background-repeat: no-repeat;
             background-attachment: fixed;
             position: relative;
@@ -114,12 +116,37 @@
         }
 
         .overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: relative;
+            top: 20%;
+            /*            position: absolute;
+            top: 20%;
+            left: 0%;
+            transform: translate(0%, -20%);*/
             box-shadow: unset;
             border-radius: 0px;
+
+        }
+
+        .btn-blur-bg {
+            backdrop-filter: blur(10px);
+            background-color: #ffffff00 !important;
+            color: #1C8DC9;
+            padding: 1em;
+        }
+
+        .btn-blur-bg:hover,
+        .btn-blur-bg:focus {
+            color: #fff;
+            background-color: #1C8DC9 !important;
+
+        }
+
+        .modal-header {
+            border-color: #1C8DC9;
+        }
+
+        .modal-footer {
+            border-color: #1C8DC9;
         }
 
         /*        @media (max-width: 576px) {
@@ -185,12 +212,12 @@
                             <div>
                                 <p class="white-text float-right card_header">
                                     <i class="card_icon fas fa-calendar-check fa-9x"></i>
-                                    <h1 class="card-title pt-2 float-left white-text">4 Month</h1>
+                                    <h1 class="card-title pt-2 float-left white-text">2 Month</h1>
                                 </p>
                                 <div class="clearfix"></div>
                                 <!-- Collapsible element -->
                                 <div class="collapse" id="collapseExample">
-                                    08 October 2019 - Jan 2020
+                                    08 October 2019 - 02 December 2019
                                 </div>
                                 <!-- / Collapsible element -->
                             </div>
@@ -206,14 +233,14 @@
                             <div>
                                 <p class="white-text float-right card_header">
                                     <i class="card_icon fas fa-code-branch fa-9x"></i>
-                                    <h1 class="card-title pt-2 float-left white-text">5 version</h1>
+                                    <h1 class="card-title pt-2 float-left white-text">10+ version</h1>
                                 </p>
                                 <div class="clearfix"></div>
                                 <!-- Collapsible element -->
                                 <div class="collapse" id="collapseExample">
-                                    - 4 draft <br>
-                                    - 1 Final <br>
-                                    </div>
+                                    - 10+ draft <br>
+                                    - 2 Final <br>
+                                </div>
                                 <!-- / Collapsible element -->
                             </div>
                         </div>
@@ -233,7 +260,7 @@
                                 <div class="clearfix"></div>
                                 <!-- Collapsible element -->
                                 <div class="collapse" id="collapseExample">
-                                    i'm goal keeper.
+                                    i'm goal keeper too.
                                 </div>
                                 <!-- / Collapsible element -->
                             </div>
@@ -245,37 +272,114 @@
         </div>
         <div class="showcase row p-0 m-0">
             <div class="col-lg-12 overlay-img-fb-v1 p-0 m-0 ">
-                <!-- <img src="img/iS/left.jpg" class="img-fluid"> -->
-                <div class="overlay text-center ">
-                    <h1 class="">Draft</h1>
-                    - Start with 3 draft for Client's feedback <br>
-                    - Positive feedback and keep going on
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#simple-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="simple-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Strat with simple</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Go with Striped and Plaid first.</p>
+                                <p>The purpose is to get some feedback about the color and style.</p>
+                                <p>It come with very different comment from each one.</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-12  overlay-img-fb-v2 p-0 m-0">
-                <!-- <img src="img/iS/right.jpg" class="img-fluid"> -->
-                <div class="overlay text-center">
-                    <h1>Final</h1>
-                    - After a big return<br>
-                    - Everything change (color,type,graphic)
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#pain-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="pain-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">How about Pain color ?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>The color is good.</p>
+                                <p>but is seems not much iconic things.</p>
+                                <p>more like a uniform.</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-12 overlay-img-fb-v3 p-0 m-0 ">
-                <!-- <img src="img/iS/left.jpg" class="img-fluid"> -->
-                <div class="overlay text-center ">
-                    <h1 class="">Draft</h1>
-                    - Start with 3 draft for Client's feedback <br>
-                    - Positive feedback and keep going on
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#crazy-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="crazy-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Strat with Crazy</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Is that more digital? <br><small>(Some more crazy even not about company.)</small></p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-12  overlay-img-fb-v4 p-0 m-0">
-                <!-- <img src="img/iS/right.jpg" class="img-fluid"> -->
-                <div class="overlay text-center">
-                    <h1>Final</h1>
-                    - After a big return<br>
-                    - Everything change (color,type,graphic)
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#final-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="final-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Finally get a good one</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Perfect to match everyone and company image.</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
         <div class="bottom-bg ">
             <div class="bottom-bg-overlay">
@@ -284,14 +388,12 @@
                     <div class="text-white d-flex align-items-center py-4 px-4">
                         <div>
                             <div class="clearfix"></div>
-                            <p>The first project i take when i onboard.</p>
-                            <p>Just know i need to design a mobile app & website & kiosk, but no instruction / guideline.</p>
-                            <p>After presenting 3 draft to Client, and feedback come, keep going to design other screen.</p>
-                            <p>So far, it's in good progress.</p>
+                            <p>The first time to design a jerseys and play football.</p>
+                            <p>At the beginning, i'm just want to do it simple. Because i really not good at this.</p>
                             <h1>But,</h1>
-                            <p>Because of the original team(Client) has change / passed to other team, Everything have to follow now.</p>
-                            <p>So, i need to redo the previous work again, and you know the time isn't count in.</p>
-                            <p>Finally, it come up with a bad design(personal).</p>
+                            <p>practically, it's a lot of fun inside.</p>
+                            <p>design something to wear is a very special experience.</p>
+
                         </div>
                     </div>
                 </div>
