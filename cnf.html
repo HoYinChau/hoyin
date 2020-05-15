@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HoYin - Cloudnifier - Website</title>
+        <link rel="icon" href="img/fav.svg" type="image/x-icon">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/in_page.css">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]> 
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    </head>
+    <style type="text/css">
+        .top-bg {
+            background-image: url(img/cnf/top-bg.jpg);
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .bottom-bg {
+            background-image: url(img/cnf/bottom-bg.jpg);
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .showcase {
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .bottom-bg-overlay {
+            background-color: #2249C7cc;
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+
+        .overlay-img-product {
+            position: relative;
+            background-image: url(img/cnf/product.jpg);
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .overlay-img-detail {
+            position: relative;
+            background-image: url(img/cnf/detail.jpg);
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .overlay-img-support {
+            position: relative;
+            background-image: url(img/cnf/support.jpg);
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        .overlay-img-ticket {
+            position: relative;
+            background-image: url(img/cnf/ticket.jpg);
+            background-position: center;
+            min-height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .blur-card {
+            backdrop-filter: blur(10px);
+            background-color: #00000022;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: unset;
+            border-radius: 0px;
+        }
+
+        .overlay {
+            position: relative;
+            top: 20%;
+            /*            position: absolute;
+            top: 20%;
+            left: 0%;
+            transform: translate(0%, -20%);*/
+            box-shadow: unset;
+            border-radius: 0px;
+
+        }
+
+        .btn-blur-bg {
+            backdrop-filter: blur(10px);
+            background-color: #ffffff00 !important;
+            color: #1C8DC9;
+            padding: 1em;
+        }
+
+        .btn-blur-bg:hover,
+        .btn-blur-bg:focus {
+            color: #fff;
+            background-color: #1C8DC9 !important;
+
+        }
+
+        .modal-header {
+            border-color: #1C8DC9;
+        }
+
+        .modal-footer {
+            border-color: #1C8DC9;
+        }
+
+        /*        @media (max-width: 576px) {
+        .blur-card {
+            min-width: 85vw;
+        }
+
+}
+        @media (max-width: 768px) {
+        .blur-card {
+            min-width: 85vw;
+        }
+
+}*/
+        @media (max-width: 992px) {
+            .blur-card {
+                min-width: 85vw;
+            }
+
+            .overlay-img-left {
+                background-size: cover;
+            }
+
+            .overlay-img-right {
+                background-size: cover;
+            }
+        }
+
+    </style>
+
+    <body>
+        <div class="top-bg">
+        </div>
+        <div class="container-fluid ">
+            <div class="row mt-5 mb-5">
+                <!-- Card -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                    <div class="card card-image red_card">
+                        <!-- Content -->
+                        <div class="text-white d-flex align-items-center py-4 px-4" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <div>
+                                <p class="white-text float-right card_header">
+                                    <i class="card_icon fas fa-user-tie fa-9x"></i>
+                                    <h1 class="card-title pt-2 float-left white-text">Cloudnifier</h1>
+                                </p>
+                                <div class="clearfix"></div>
+                                <!-- Collapsible element -->
+                                <div class="collapse" id="collapseExample">
+                                    A cloud base IT solution provider. <br>Microsoft & Adobe Partner.
+                                </div>
+                                <!-- / Collapsible element -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <!-- Card -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+                    <div class="card card-image blue_card">
+                        <!-- Content -->
+                        <div class="text-white d-flex align-items-center py-4 px-4" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <div>
+                                <p class="white-text float-right card_header">
+                                    <i class="card_icon fas fa-calendar-check fa-9x"></i>
+                                    <h1 class="card-title pt-2 float-left white-text">6 Month</h1>
+                                </p>
+                                <div class="clearfix"></div>
+                                <!-- Collapsible element -->
+                                <div class="collapse" id="collapseExample">
+                                    05 July 2019 - 20 January 2020
+                                </div>
+                                <!-- / Collapsible element -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <!-- Card -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-4 ">
+                    <div class="card card-image green_card">
+                        <!-- Content -->
+                        <div class="text-white d-flex align-items-center py-4 px-4" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <div>
+                                <p class="white-text float-right card_header">
+                                    <i class="card_icon fas fa-code-branch fa-9x"></i>
+                                    <h1 class="card-title pt-2 float-left white-text">4 version</h1>
+                                </p>
+                                <div class="clearfix"></div>
+                                <!-- Collapsible element -->
+                                <div class="collapse" id="collapseExample">
+                                    - 3 draft <br>
+                                    - 1 Final <br>
+                                </div>
+                                <!-- / Collapsible element -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <!-- Card -->
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-4 mb-4">
+                    <div class="card card-image purple_card">
+                        <!-- Content -->
+                        <div class="text-white d-flex align-items-center py-4 px-4" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <div>
+                                <p class="white-text float-right card_header">
+                                    <i class="card_icon fas fa-money-check-alt fa-9x"></i>
+                                    <h1 class="card-title pt-2 float-left white-text">Ux Designer</h1>
+                                </p>
+                                <div class="clearfix"></div>
+                                <!-- Collapsible element -->
+                                <div class="collapse" id="collapseExample">
+                                    - UX design <br>
+                                    - Web design <br>
+                                    - UAT <br>
+                                </div>
+                                <!-- / Collapsible element -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+            </div>
+        </div>
+        <div class="showcase row p-0 m-0">
+            <div class="col-lg-12 overlay-img-product p-0 m-0 ">
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#product-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="product-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Strat with 3 Draft</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>By requirement: Information & professional</p>
+                                <p>3 draft are very similar, but the listing layout.</p>
+                                <a href="https://sketch.cloud/s/abm3p" target="_blank"><button type="button" class="btn btn-outline-dark waves-effect">Sketch</button></a>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 overlay-img-detail p-0 m-0 ">
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#detail-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="detail-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Product detail page</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Each product are very specific, so it need many text.</p>
+                                <p>Different product have a different laout, depend on product features.</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12  overlay-img-support p-0 m-0">
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#support-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="support-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Support portal</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Open to client for system support.</p>
+                                <p>Same as ticket system.</p>
+                                <a href="https://sketch.cloud/s/Z4Vd3/a/gdZvDM" target="_blank"><button type="button" class="btn btn-outline-dark waves-effect">Sketch</button></a>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <div class="col-lg-12  overlay-img-ticket p-0 m-0">
+                <div class="overlay ">
+                    <button type="button" class="btn btn-primary btn-blur-bg" data-toggle="modal" data-target="#ticket-modal">
+                        <i class="fas fa-info-circle fa-3x"></i></button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade blur-bg" id="ticket-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">New ticket page</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Simplify the step and layout.</p>
+                                <p>Show the info and from cleanly.</p>
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bg ">
+            <div class="bottom-bg-overlay">
+                <div class="card blur-card">
+                    <!-- Content -->
+                    <div class="text-white d-flex align-items-center py-4 px-4">
+                        <div>
+                            <div class="clearfix"></div>
+                            <p>A information website is hard to make it creative.</p>
+                            <p>Keep it clean and easy to read is the purpose.</p>
+                            <h1>But,</h1>
+                            <p>Finding some place to have fun is important.</p>
+                            <p><a href="https://sketch.cloud/s/abm3p" target="_blank"><button type="button" class="btn btn-outline-white waves-effect">Sketch</button></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="float_btn">
+            <a href="./index.html" class="float">
+                <i class="fa fa-reply my-float"></i>
+            </a>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+
+
+
+            });
+
+
+
+            // Hide Header on on scroll down
+            var didScroll;
+            var lastScrollTop = 0;
+            var delta = 5;
+            var navbarHeight = $('.float_btn').outerHeight();
+
+            $(window).scroll(function(event) {
+                didScroll = true;
+            });
+
+            setInterval(function() {
+                if (didScroll) {
+                    hasScrolled();
+                    didScroll = false;
+                }
+            }, 250);
+
+            function hasScrolled() {
+                var st = $(this).scrollTop();
+
+                // Make sure they scroll more than delta
+                if (Math.abs(lastScrollTop - st) <= delta)
+                    return;
+
+                // If they scrolled down and are past the navbar, add class .nav-up.
+                // This is necessary so you never see what is "behind" the navbar.
+                if (st > lastScrollTop && st > navbarHeight) {
+                    // Scroll Down
+                    $('.float_btn').removeClass('nav-down').addClass('float_btn_none');
+                } else {
+                    // Scroll Up
+                    if (st + $(window).height() < $(document).height()) {
+                        $('.float_btn').removeClass('float_btn_none').addClass('nav-down');
+                    }
+                }
+
+                lastScrollTop = st;
+            }
+            $('.toast').toast('show');
+
+        </script>
+    </body>
+
+</html>
