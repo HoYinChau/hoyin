@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Kodchasan&display=swap');
-body{
-font-family: 'Kodchasan', sans-serif;
+
+body {
+    font-family: 'Kodchasan', sans-serif;
 
 }
 
@@ -8,8 +9,9 @@ html,
 body {
     height: 100%;
     line-height: 1.8;
-/*    color: #999
-*/}
+    /*    color: #999
+*/
+}
 
 .uppercase {
     text-transform: uppercase;
@@ -52,21 +54,25 @@ body {
 }
 
 @-webkit-keyframes bounce {
+
     0%,
     100% {
         -webkit-transform: scale(0.0)
     }
+
     50% {
         -webkit-transform: scale(1.0)
     }
 }
 
 @keyframes bounce {
+
     0%,
     100% {
         transform: scale(0.0);
         -webkit-transform: scale(0.0);
     }
+
     50% {
         transform: scale(1.0);
         -webkit-transform: scale(1.0);
@@ -188,6 +194,7 @@ b i:last-child {
         -webkit-transform: translateY(40px);
         transform: translateY(40px);
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
@@ -201,6 +208,7 @@ b i:last-child {
         -webkit-transform: translateY(40px);
         transform: translateY(40px);
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateY(0);
@@ -212,6 +220,7 @@ b i:last-child {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         -webkit-transform: translateY(20px);
@@ -223,6 +232,7 @@ b i:last-child {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
         -webkit-transform: translateY(20px);
@@ -326,10 +336,12 @@ b i:last-child {
         opacity: 0;
         -webkit-transform: translateZ(-20px) rotateX(90deg);
     }
+
     60% {
         opacity: 1;
         -webkit-transform: translateZ(-20px) rotateX(-10deg);
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateZ(-20px) rotateX(0deg);
@@ -342,11 +354,13 @@ b i:last-child {
         -webkit-transform: translateZ(-20px) rotateX(90deg);
         transform: translateZ(-20px) rotateX(90deg);
     }
+
     60% {
         opacity: 1;
         -webkit-transform: translateZ(-20px) rotateX(-10deg);
         transform: translateZ(-20px) rotateX(-10deg);
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateZ(-20px) rotateX(0deg);
@@ -359,10 +373,12 @@ b i:last-child {
         opacity: 1;
         -webkit-transform: translateZ(-20px) rotateX(0);
     }
+
     60% {
         opacity: 0;
         -webkit-transform: translateZ(-20px) rotateX(-100deg);
     }
+
     100% {
         opacity: 0;
         -webkit-transform: translateZ(-20px) rotateX(-90deg);
@@ -375,11 +391,13 @@ b i:last-child {
         -webkit-transform: translateZ(-20px) rotateX(0);
         transform: translateZ(-20px) rotateX(0);
     }
+
     60% {
         opacity: 0;
         -webkit-transform: translateZ(-20px) rotateX(-100deg);
         transform: translateZ(-20px) rotateX(-100deg);
     }
+
     100% {
         opacity: 0;
         -webkit-transform: translateZ(-20px) rotateX(-90deg);
@@ -398,6 +416,7 @@ b i:last-child {
     .box-headline {
         font-size: 100px;
     }
+
     .box-intro h5 {
         font-size: 12px;
     }
@@ -407,6 +426,7 @@ b i:last-child {
     .box-headline {
         font-size: 80px;
     }
+
     .box-intro h5 {
         font-size: 12px;
     }
@@ -417,12 +437,16 @@ b i:last-child {
     .box-headline {
         font-size: 50px;
     }
+
     .box-intro h5 {
         font-size: 12px;
     }
 
 }
-.blog-slider__text{font-size: 1.1rem;}
+
+.blog-slider__text {
+    font-size: 1.1rem;
+}
 
 figure {
     margin: 0px;
@@ -430,21 +454,22 @@ figure {
 
 }
 
-.rainbow-color{
-  color: #f35626;
-  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 10s infinite linear;
+.rainbow-color {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
 }
 
 @-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(-360deg);
-  }
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
 }
 
 .image-cover {
@@ -739,6 +764,38 @@ figure {
     background-image: linear-gradient(147deg, #80c2cc 0%, #ccbab0 74%);
 }
 
+.fhkpmi {
+    box-shadow: 4px 13px 30px 1px rgba(110, 134, 158, 0.4);
+}
 
+.fhkpmi_button {
+    box-shadow: 0px 14px 80px 1px rgba(110, 134, 158, 0.75);
+    background-image: linear-gradient(147deg, #6dacec 0%, #6e869e 74%);
+}
 
+.hkgcpl {
+    box-shadow: 4px 13px 30px 1px rgba(72, 172, 136, 0.4);
+}
 
+.hkgcpl_button {
+    box-shadow: 0px 14px 80px 1px rgba(72, 172, 136, 0.5);
+    background-image: linear-gradient(147deg, #00ff94 0%, #266a51 74%);
+}
+
+.hkfhy {
+    box-shadow: 4px 13px 30px 1px rgba(89, 34, 130, 0.4);
+}
+
+.hkfhy_button {
+    box-shadow: 0px 14px 80px 1px rgba(89, 34, 130, 0.5);
+    background-image: linear-gradient(147deg, #d8a4ff 0%, #592282 74%);
+}
+
+.hknmda {
+    box-shadow: 4px 13px 30px 1px rgba(72, 172, 136, 0.4);
+}
+
+.hknmda_button {
+    box-shadow: 0px 14px 80px 1px rgba(72, 172, 136, 0.6);
+    background-image: linear-gradient(147deg, #00ff94 0%, #266a51 74%);
+}
