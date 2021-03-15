@@ -799,3 +799,33 @@ figure {
     box-shadow: 0px 14px 80px 1px rgba(72, 172, 136, 0.6);
     background-image: linear-gradient(147deg, #00ff94 0%, #266a51 74%);
 }
+.fresh{
+    box-shadow: 4px 13px 30px 1px rgba(132, 199, 77, 0.4);
+}
+.fresh_button{
+    box-shadow: 4px 13px 30px 1px rgba(132, 199, 77, 0.4);
+    background-image: linear-gradient(147deg, #CCFFAE 0%, #429d19 74%);
+}
+.GFB {
+    box-shadow: 4px 13px 30px 1px rgba(53, 145, 192, 0.4);
+}
+.GFB_button {
+    box-shadow: 0px 14px 80px 1px rgba(53, 145, 192, 0.6);
+    background-image: linear-gradient(147deg, #bfdeff 0%, #3591C0 74%);
+}
+.RC {
+    box-shadow: 4px 13px 30px 1px rgba(151, 208, 220, 0.4);
+}
+.RC_button {
+    box-shadow: 4px 13px 30px 1px rgba(151, 208, 220, 0.4);
+    background-image: linear-gradient(147deg, #dff7ff 0%, #97D0DC 74%);
+}
+.school {
+    box-shadow: 4px 13px 30px 1px rgba(169, 0, 111, 0.4);
+}
+.school_button {
+    box-shadow: 4px 13px 30px 1px rgba(169, 0, 111, 0.4);
+    background-image: linear-gradient(147deg, #FFD6F1 0%, #A9006F 74%);
+}
+
+
