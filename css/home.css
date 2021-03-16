@@ -834,9 +834,12 @@ figure {
     box-shadow: 4px 13px 30px 1px rgba(120, 24, 95,0.4);
     background-image: linear-gradient(147deg, #FFD6F1 0%, #A9006F 74%);
 }
+.AMW {
+    box-shadow: 4px 13px 30px 1px rgba(0, 0, 0, 0.51);
+}
+.AMW_button {
+    box-shadow: 4px 13px 30px 1px rgba(0, 0, 0, 0.51);
+    background-image: linear-gradient(147deg, #D39D5E 0%, #000 74%);
+}
 
 
-
-
-
-4px 13px 30px 1px rgb(120, 24, 95)
