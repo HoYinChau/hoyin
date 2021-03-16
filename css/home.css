@@ -842,4 +842,10 @@ figure {
     background-image: linear-gradient(147deg, #D39D5E 0%, #000 74%);
 }
 
-
+.becky {
+    box-shadow: 4px 13px 30px 1px rgba(29, 177, 169, 0.51);
+}
+.becky_button {
+    box-shadow: 4px 13px 30px 1px rgba(29, 177, 169, 0.51);
+    background-image: linear-gradient(147deg, #D4F0EF 0%, #1DB1A9 74%);
+}
