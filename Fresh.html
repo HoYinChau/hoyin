@@ -1,267 +1,325 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HoYin - Fresh - App</title>
-    <link href="img/fav.svg" rel="icon" type="image/x-icon">
-    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
-    <link href="css/in_page.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]> 
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="discrption" content="Portfolio" />
+    <meta name="keyword" content="personal, portfolio" />
+    <!--  Title -->
+    <title>HoYin personal portfolio - Fresh</title>
+    <!-- Font Google -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="assets/img/fav.svg" type="image/x-icon" />
+    <link rel="preload" href="assets/img/circle-dotted.png" as="image" />
+    <!-- custom styles (optional) -->
+    <link href="assets/css/plugins.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<style type="text/css">
-.top-bg {
-    background-image: url(img/fresh/top-bg.png);
-    background-position: center;
-    min-height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+<!--classic-menu-->
 
-.bottom-bg {
-    background-image: url(img/fresh/bottom-bg.png);
-    background-position: center;
-    min-height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.bq-primary .bq-title {
-    color: #7BC74D !important;
-}
-
-.bq-primary {
-    border-left: 3px solid #7BC74D !important;
-}
-
-.bq-top {
-    border-left: 0px solid #7BC74D !important;
-    border-top: 3px solid #7BC74D !important;
-}
-
-.bq-right {
-    border-left: 0px !important;
-    border-right: 3px solid #7BC74D !important;
-}
-
-.bq-right .bq-title {
-    color: #7BC74D !important;
-}
-
-.card-title {
-    color: #7BC74D;
-}
-
-.first_w {
-    color: #7BC74D;
-    font-size: 24px;
-}
-
-.xs-border {
-    border-left: 3px solid #7BC74D;
-}
-</style>
-
-<body>
-    <div class="top-bg">
+<body class="v-dark dsn-line-style dsn-effect-scroll dsn-cursor-effect dsn-ajax">
+    <!-- ========== Loading Page ========== -->
+    <div class="preloader">
+        <span class="percent ">0</span>
+        <span class="loading-text text-uppercase">Loading ...</span>
+        <div class="preloader-bar">
+            <div class="preloader-progress"></div>
+        </div>
+        <h1 class="title v-middle">
+            <span class="text-strok">Hello</span>
+            <span class="text-fill">Hello</span>
+        </h1>
     </div>
-    <div class="container ">
-        <div class="row align-items-center justify-content-center mt-4 mb-4">
-            <div class=" col-lg-3 col-md-4 col-6 align-items-center">
-                <img class="img-fluid z-depth-1 rounded-circle" src="img/fresh/logo.png">
-                </img>
+    <!-- ========== End Loading Page ========== -->
+    <!-- ========== Menu ========== -->
+    <div class="site-header dsn-container dsn-load-animate">
+        <div class="extend-container d-flex w-100 align-items-baseline justify-content-between align-items-end">
+            <div class="inner-header p-relative">
+                <div class="main-logo">
+                    <a href="index.html" data-dsn="parallax">
+                        <img class="light-logo" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-dsn-src="assets/img/logo-dark.svg" alt="" />
+                        <img class="dark-logo" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-dsn-src="assets/img/logo-dark.svg" alt="" />
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="row align-items-center justify-content-center">
-            <div class="col-lg-8 text-center">
-                <blockquote class="blockquote bq-primary bq-top">
-                    <p class="bq-title">
-                        About Fresh
-                    </p>
-                    <p>
-                        A inventory management application for a supermarket.
-                    </p>
-                </blockquote>
+            <div class="menu-icon d-flex align-items-baseline">
+                <div class="text-menu p-relative  font-heading text-transform-upper">
+                    <div class="p-absolute text-button">Menu</div>
+                    <div class="p-absolute text-open">Open</div>
+                    <div class="p-absolute text-close">Close</div>
+                </div>
+                <div class="icon-m" data-dsn="parallax" data-dsn-move="10">
+                    <span class="menu-icon-line p-relative d-inline-block icon-top"></span>
+                    <span class="menu-icon-line p-relative d-inline-block icon-center"></span>
+                    <span class="menu-icon-line p-relative d-block icon-bottom"></span>
+                </div>
             </div>
-        </div>
-        <div class="row mt-4 mb-4 align-items-center justify-content-center">
-            <h1 class="section_title">
-                Project Goal
-            </h1>
-        </div>
-        <div class="mt-2 mb-2">&nbsp</div>
-        <div class="row mt-4 mb-5 align-items-center justify-content-center">
-            <div class="col-lg-5"><img src="img/fresh/landing_page.svg"></div>
-            <div class="col-lg-6">
-                <blockquote class="blockquote bq-primary">
-                    <p class="bq-title "><i class="pr-3 fas fa-random fa-2x"></i>Digital transformation</p>
-                </blockquote>
-                <blockquote class="blockquote bq-primary bq-right text-right">
-                    <p class="bq-title"><i class="pr-3 fas fa-magic fa-2x"></i>Simplify the process</p>
-                </blockquote>
-            </div>
-        </div>
-        <div class="row mt-4 mb-4 align-items-center justify-content-center">
-            <h1 class="section_title">
-                Challenge
-            </h1>
-        </div>
-        <div class="mt-2 mb-2">&nbsp</div>
-        <div class="row mt-4 mb-5 align-items-center justify-content-center text-center">
-            <div class="col-lg-4 order-lg-2 mb-4"><img src="img/fresh/data_analytics_.svg"></div>
-            <div class="col-lg-4 order-lg-1">
-                <div class="row">
-                    <div class=" col-lg-12 mb-4">
-                        <!-- Card -->
-                        <div class="card">
-                            <div class="card-body">
-                                <!-- Title -->
-                                <h4 class="card-title"><i class="fas fa-sticky-note mb-1 fa-2x"></i> <br>Paper to Digital</h4>
-                                <!-- Text -->
-                                <p class="card-text">
-                                    Traditionally, the management tools are paper or desktop application.
-                                </p>
-                            </div>
+            <nav class="accent-menu dsn-container main-navigation p-absolute  w-100  d-flex align-items-baseline ">
+                <div class="menu-cover-title">Menu</div>
+                <ul class="extend-container p-relative d-flex flex-column justify-content-center h-100">
+                    <li>
+                        <a href="about.html">
+                            <span class="dsn-title-menu">Home</span>
+                            <span class="dsn-meta-menu">01</span>
+                            <span class="dsn-bg-arrow"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">
+                            <span class="dsn-title-menu">Portfolio</span>
+                            <span class="dsn-meta-menu">02</span>
+                            <span class="dsn-bg-arrow"></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="container-content  p-absolute h-100 left-60 d-flex flex-column justify-content-center">
+                    <div class="nav__info">
+                        <div class="nav-content">
+                            <p class="title-line">
+                                Contact</p>
+                            <p class="links  over-hidden">
+                                <a href="mailto:chyhi.95@gmail.com" data-hover-text="Send a messages." class="link-hover">chyhi.95@gmail.com</a>
+                            </p>
                         </div>
-                        <!-- Card -->
                     </div>
-                    <div class="col-lg-12 mb-4">
-                        <!-- Card -->
-                        <div class="card">
-                            <!-- Card content -->
-                            <div class="card-body">
-                                <!-- Title -->
-                                <h4 class="card-title"><i class="fas fa-dolly mb-1 fa-2x"></i> <br>Quick import</h4>
-                                <!-- Text -->
-                                <p class="card-text">When the shipping come in, it's means 100+ packages come in.
-                                </p>
+                    <div class="nav-social nav-content">
+                        <div class="nav-social-inner p-relative">
+                            <p class="title-line">
+                                Follow us</p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.behance.net/hoyin00" target="_blank" rel="nofollow">Behance.
+                                        <div class="icon-circle"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/hoyinc/" target="_blank" rel="nofollow">Linkedin.
+                                        <div class="icon-circle">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- ========== End Menu ========== -->
+    <main class="main-root">
+        <div id="dsn-scrollbar">
+            <div class="main-content">
+                <div class="content-inner">
+                    <!--=== Header Project Full With & content bottom ===-->
+                    <header class="header-project p-relative h-100-v over-hidden dsn-header-animation v-dark-head">
+                        <div data-dsn-ajax="img" class="p-absolute dsn-hero-parallax-img w-100 h-100 over-hidden" data-overlay="6">
+                            <img class="cover-bg-img white-background" src="assets/img/project/fresh/01@2x.png" alt="">
+                        </div>
+                        <div class="project-number p-absolute dsn-container d-flex">
+                            <h6>Project</h6>
+                            <span class="curent">4</span>
+                            <span class="full">14</span>
+                        </div>
+                        <div class="d-flex  dsn-hero-parallax-title align-items-end h-100 dsn-container pb-40 pt-80">
+                            <div class="content p-relative w-100 padding-lr-section">
+                                <div class="intro-project">
+                                    <div id="dsn-hero-title" class="intro-title">
+                                        <div class="metas d-inline-block mb-20">
+                                <span>Prototype</span>
+                                <span>Mobile App</span>
+                                <span>Inventory management</span>
+                                        </div>
+                                        <h1 class="title" data-dsn-ajax="title">
+                                            Fresh
+                                        </h1>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!-- Card -->
+                        <div class="scroll-d p-absolute dsn-container">
+                            <img src="assets/img/scroll_down.svg" alt="">
+                        </div>
+                    </header>
+                    <!--=== End Header Project Full With & content bottom ===-->
+                    <div class="wrapper">
+                        <!--=== Intro Project ===-->
+                        <div class="intro-project p-relative section-margin">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="intro-project-left">
+                                            <h4 class="title-block text-uppercase mb-20">Project</h4>
+                                            <ul class="intro-project-list">
+                                                <li class="p-relative"><strong>Company</strong>Cloudnifier
+                                                </li>
+                                                <li class="p-relative"><strong>Published</strong>Apr 2020</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 offset-lg-1">
+                                        <div class="intro-project-right">
+                                            <h4 class="title-block text-uppercase mb-20">info</h4>
+                                            <p class="intro-project-description">A prototype of mobile app for pre-sale, used for inventory management at super market.</p>
+                                            <a target="_blank" href="https://xd.adobe.com/view/2d3a7d35-baa6-47c2-8da7-83ae40729907-7869/" class="visit-site mt-30">
+                                                <span class="inner-visit d-flex align-items-center">
+                                                    <span class="text text-uppercase">Visit @Adobe XD</span>
+                                                    <span class="icon">
+                                                        <svg viewBox="0 0 40 40">
+                                                            <polyline class="path" points="14.6 17.45 20 22.85 25.4 17.45">
+                                                            </polyline>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--=== End Intro Project ===-->
+                        <div class="section-margin has-popup over-hidden p-relative">
+                            <div class="dsn-container">
+                                <div class="d-grid grid-md-4  over-hidden">
+
+                                    <a href="assets/img/project/fresh/login.png" class="p-relative over-hidden h-v-60">
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                            data-dsn-src="assets/img/project/fresh/login.png"
+                                            data-dsn-srcset="assets/img/project/fresh/login.png 1800w,assets/img/project/fresh/login.png 768w"
+                                            alt="" class="cover-bg-img">
+                                    </a>
+
+                                    <a href="assets/img/project/fresh/home.png" class="p-relative over-hidden h-v-60">
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                            data-dsn-src="assets/img/project/fresh/home.png"
+                                            data-dsn-srcset="assets/img/project/fresh/home.png 1800w,assets/img/project/fresh/home.png 768w"
+                                            alt="" class="cover-bg-img">
+                                    </a>
+
+                                    <a href="assets/img/project/fresh/good_receipt.png" class="p-relative over-hidden h-v-60">
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                            data-dsn-src="assets/img/project/fresh/good_receipt.png"
+                                            data-dsn-srcset="assets/img/project/fresh/good_receipt.png 1800w,assets/img/project/fresh/good_receipt.png 768w"
+                                            alt="" class="cover-bg-img">
+                                    </a>
+
+                                    <a href="assets/img/project/fresh/good_receipt___scan_barcode.png" class="p-relative over-hidden h-v-60">
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                            data-dsn-src="assets/img/project/fresh/good_receipt___scan_barcode.png"
+                                            data-dsn-srcset="assets/img/project/fresh/good_receipt___scan_barcode.png 1800w,assets/img/project/fresh/good_receipt___scan_barcode.png 768w"
+                                            alt="" class="cover-bg-img">
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container section-p section-margin p-relative" data-dsn-animate="section">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <h4 class="title-block dsn-text sm-mb-20">
+                                        Proccess & <br> Output
+                                    </h4>
+                                </div>
+
+                                <div class="col-lg-8">
+                                    <p class="dsn-up">
+                                        This project was designed for pre-sale, we did a little research on client's company also the exciting solution.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div> 
+                    </div>
+                    <div class="next-project v-dark-head p-relative h-v-100 over-hidden">
+                        <div class="bg w-100 h-100 p-absolute over-hidden z-index-0 before-z-index" data-overlay="6">
+                            <img src="assets/img/project/ntsha/01@2x.png" alt="" class="cover-bg-img white-background">
+                        </div>
+                        <div class="next-project-inner dsn-container p-relative w-100 h-100 d-flex flex-column justify-content-center">
+                            <div class="project-number p-absolute d-flex">
+                                <h6>Project</h6>
+                                <span class="curent">5</span>
+                                <span class="full">14</span>
+                            </div>
+                            <div class="metas d-inline-block mt-30 right-0 p-absolute top-0 dsn-container">
+                                <span>Logo</span>
+                                <span>Mobile App</span>
+                                <span>Inventory management</span>
+                            </div>
+                            <a href="ntsha.html" class="effect-ajax border-top border-bottom" data-dsn-ajax="next">
+                                <h2 class="title section-padding p-relative ">
+                                    <span class="title-stroke">NTSHA</span>
+                                    <span class="p-absolute section-padding d-none top-0 w-100 h-100 left-0">NTSHA</span>
+                                </h2>
+                            </a>
+                            <div class="case">
+                                <div class="p-absolute w-100 h-100 ">
+                                    <img class="cover-bg-img" src="assets/img/case.svg" alt="">
+                                </div>
+                                <strong class="title-block heading-color number v-middle">
+                                    100%
+                                </strong>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 order-lg-3">
-                <div class="row">
-                    <div class="col-lg-12 mb-4">
-                        <!-- Card -->
-                        <div class="card">
-                            <!-- Card content -->
-                            <div class="card-body">
-                                <!-- Title -->
-                                <h4 class="card-title"><i class="fas fa-question mb-1 fa-2x"></i> <br>Unknow Client</h4>
-                                <!-- Text -->
-                                <p class="card-text">This is a Pre-sale stage, so we don't know what exactly they want.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Card -->
-                    </div>
-
-                </div>
-            </div>
         </div>
-        <div class="row mt-4 mb-4 align-items-center justify-content-center">
-            <h1 class="section_title">
-                <span>
-                    Process
-                </span>
-            </h1>
-        </div>
-        <div class="row mt-4 mb-4 ">
-            <div class="col-lg-6 align-items-left"><img src="img/fresh/creative_process_.svg"></div>
-            <div class="col-lg-6">
-                <p><span class="first_w"><span class="xs-border">&nbsp</span> R</span>esearching the <strong><b>Online reference</b></strong>, <strong><b>Client's comapny</b></strong></p>
-                    <p><span class="first_w"><span class="xs-border">&nbsp</span> A</span>nalysis the <strong><b>Pain point</b></strong>, <strong><b>Needed function</b></strong>, <strong><b>Flow</b></strong></p>
-                    <p><span class="first_w"><span class="xs-border">&nbsp</span> W</span>ireframimg the design, to present to client.
-                        <br>                   
-                    </p>
-                        <a href="https://adobe.ly/2UweX0a" target="_blank">
-                            <button class="btn-sm btn-outline-dark waves-effect" type="button">
-                                Adobe XD
-                            </button></a>
-                    </p>
-            </div>
+    </main>
+    <!-- ========== Scroll Right Page To Top Page ========== -->
+    <div class="scroll-to-top">
+        <img src="assets/img/scroll_top.svg" alt="">
+        <div class="box-numper">
+            <span>10%</span>
         </div>
     </div>
-    <div class="bottom-bg">
+    <!-- ========== End Scroll Right Page To Top Page ========== -->
+    <!-- ========== Cursor Page ========== -->
+    <div class="cursor">
+        <div class="cursor-helper">
+            <span class="cursor-drag">Drag</span>
+            <span class="cursor-view">View</span>
+            <span class="cursor-open"><i class="fas fa-plus"></i></span>
+            <span class="cursor-close">Close</span>
+            <span class="cursor-play">play</span>
+            <span class="cursor-next"><i class="fas fa-chevron-right"></i></span>
+            <span class="cursor-prev"><i class="fas fa-chevron-left"></i></span>
+        </div>
     </div>
-    <div class="float_btn">
-        <a class="float" href="./index.html">
-            <i class="fa fa-reply my-float">
-            </i>
-        </a>
+    <!-- ========== End Cursor Page ========== -->
+    <!-- ========== social network ========== -->
+    <div class="social-side social-network d-flex align-items-center ">
+        <div class="icon" data-dsn="parallax">
+            <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </div>
+        <ul class="socials d-flex flex-column p-absolute ">
+            <li>
+                <a href="https://www.linkedin.com/in/hoyinc/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    <span>in</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.behance.net/hoyin00" target="_blank">
+                    <i class="fab fa-behance"></i>
+                    <span>Be</span>
+                </a>
+            </li>
+        </ul>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" type="text/javascript">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js" type="text/javascript">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js" type="text/javascript">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/js/mdb.min.js" type="text/javascript">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js">
-    </script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-
-
-
-
-    });
-
-
-
-    // Hide Header on on scroll down
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var navbarHeight = $('.float_btn').outerHeight();
-
-    $(window).scroll(function(event) {
-        didScroll = true;
-    });
-
-    setInterval(function() {
-        if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-        }
-    }, 250);
-
-    function hasScrolled() {
-        var st = $(this).scrollTop();
-
-        // Make sure they scroll more than delta
-        if (Math.abs(lastScrollTop - st) <= delta)
-            return;
-
-        // If they scrolled down and are past the navbar, add class .nav-up.
-        // This is necessary so you never see what is "behind" the navbar.
-        if (st > lastScrollTop && st > navbarHeight) {
-            // Scroll Down
-            $('.float_btn').removeClass('nav-down').addClass('float_btn_none');
-        } else {
-            // Scroll Up
-            if (st + $(window).height() < $(document).height()) {
-                $('.float_btn').removeClass('float_btn_none').addClass('nav-down');
-            }
-        }
-
-        lastScrollTop = st;
-    }
-    $('.toast').toast('show');
-    </script>
+    <!-- ========== End social network ========== -->
+    <!-- ========== paginate-right-page ========== -->
+    <div class="dsn-paginate-right-page"></div>
+    <!-- ========== Line left & right with creative page ========== -->
+    <div class="line-border-style w-100 h-100"></div>
+    <!-- Optional JavaScript -->
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/dsn-grid.min.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 
 </html>
